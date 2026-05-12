@@ -118,18 +118,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
 .pdot.pain{background:#DC2626}
 .pdot.gain{background:#16A34A}
 .pquote{border-left:3px solid var(--p);padding:12px 18px;background:var(--p-pale);border-radius:0 8px 8px 0;margin-top:18px;font-size:14px;font-style:italic;color:var(--p-dark);line-height:1.65}
+.p-signal{margin-top:14px;padding:12px 16px;background:var(--navy);border-radius:8px}
+.p-signal-label{font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--p-light);margin-bottom:6px}
+.p-signal-text{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.6}
 .buyer-tag{font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;background:var(--p);color:#fff;padding:3px 9px;border-radius:4px;margin-left:8px;vertical-align:middle}
 .obj-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .obj-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(123,47,190,0.04)}
 .obj-q{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 .obj-a{font-size:13px;color:var(--muted);line-height:1.65}
-.sl-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(123,47,190,0.04)}
+.sl-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
 .sl-label{font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:12px}
 .sl-row{display:flex;gap:10px;flex-wrap:wrap}
-.sl-input{flex:1;min-width:180px;height:42px;border:1.5px solid var(--border);border-radius:8px;padding:0 16px;font-size:14px;color:var(--text);background:var(--bg);outline:none;font-family:inherit;transition:border-color .15s}
+.sl-input{flex:1;min-width:180px;height:42px;border:1.5px solid var(--border);border-radius:8px;padding:0 16px;font-size:14px;color:var(--text);background:var(--bg);outline:none;font-family:inherit}
 .sl-input:focus{border-color:var(--p);background:#fff}
 .sl-btn{height:42px;padding:0 22px;background:var(--p);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
-.sl-btn:hover{background:var(--p-dark)}
 .sl-result{margin-top:16px;display:none}
 .sl-result.show{display:block}
 .sr-card{border-radius:10px;padding:18px 20px}
@@ -145,7 +147,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
 .sr-row:last-of-type{border-bottom:none}
 .sr-context{font-size:13px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid rgba(0,0,0,0.07);line-height:1.6}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
-.pc2{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;border-top:3px solid var(--p);box-shadow:0 1px 4px rgba(123,47,190,0.04)}
+.pc2{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;border-top:3px solid var(--p)}
 .pc2.hot{border-top-color:#DC2626}
 .pc2.warm{border-top-color:#D97706}
 .pc2-state{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:3px}
@@ -165,14 +167,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
 .cx{color:#DC2626;font-weight:700}
 .intro-context{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-bottom:20px;border-left:3px solid var(--p)}
 .intro-context p{font-size:14px;color:var(--muted);line-height:1.7}
-/* EMAIL SECTION */
 .email-ctrl-label{font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:8px}
 .email-select{width:100%;height:42px;border:1.5px solid var(--border);border-radius:8px;padding:0 14px;font-size:14px;color:var(--text);background:var(--bg);font-family:inherit;outline:none}
 .email-select:focus{border-color:var(--p)}
 .warmth-labels{display:flex;justify-content:space-between;padding:0 2px;margin-top:6px}
 .warmth-label{font-size:11px;font-weight:600;color:var(--hint);transition:color .2s}
 .warmth-label.active{color:var(--p);font-weight:800}
-.email-output-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;margin-top:16px}
 .email-subj-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
 .email-subj{flex:1;background:var(--p-pale);border:1px solid var(--border2);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--navy)}
 .copy-btn{height:36px;padding:0 16px;background:var(--p);color:#fff;border:none;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;flex-shrink:0}
@@ -181,6 +181,37 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
 .email-body{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:18px 20px;font-size:14px;color:var(--text);line-height:1.75;white-space:pre-wrap;min-height:220px}
 .copy-btn-abs{position:absolute;top:12px;right:12px;height:32px;padding:0 14px;background:var(--p);color:#fff;border:none;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
 .email-note{margin-top:10px;font-size:12px;color:var(--hint);font-style:italic}
+/* Campaign section */
+.cstat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:16px}
+.cstat{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:16px 18px}
+.cstat-n{font-size:28px;font-weight:800;color:#fff}
+.cstat-l{font-size:12px;color:rgba(255,255,255,0.45);margin-top:4px}
+.theme-bar{display:flex;align-items:center;gap:16px;padding:14px 16px;border-radius:10px;margin-bottom:10px}
+.theme-bar.govern{background:var(--p-pale);border:1.5px solid var(--p)}
+.theme-bar.watch{background:var(--navy-light);border:1px solid var(--border)}
+.theme-bar.defend{background:var(--blue-pale);border:1px solid var(--border)}
+.theme-num{flex-shrink:0;width:80px}
+.theme-num-val{font-size:20px;font-weight:800}
+.theme-num-val.govern{color:var(--p)}
+.theme-num-val.watch{color:var(--navy-mid)}
+.theme-num-val.defend{color:#0057B0}
+.theme-num-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em}
+.theme-num-label.govern{color:var(--p-dark)}
+.theme-num-label.watch{color:var(--navy-mid)}
+.theme-num-label.defend{color:#0057B0}
+.theme-track{flex:1}
+.theme-track-bar{height:8px;background:var(--border);border-radius:4px;overflow:hidden;margin-bottom:6px}
+.theme-track-fill{height:100%;border-radius:4px}
+.theme-track-text{font-size:13px;color:var(--muted)}
+.title-row{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--bg);border-radius:6px;margin-bottom:6px}
+.title-row:last-child{margin-bottom:0}
+.account-card{padding:12px 14px;background:var(--bg);border-radius:8px;border-left:3px solid var(--p)}
+.account-card-name{font-size:14px;font-weight:700;color:var(--navy)}
+.account-card-detail{font-size:13px;color:var(--muted);margin-top:2px}
+.govern-angle{padding:14px 16px;background:var(--p-pale);border-radius:8px;border-left:3px solid var(--p);margin-bottom:10px}
+.govern-angle-label{font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--p-dark);margin-bottom:4px}
+.govern-angle-quote{font-size:14px;color:var(--navy);font-style:italic;margin-bottom:6px}
+.govern-angle-desc{font-size:13px;color:var(--muted)}
 @media(max-width:640px){
   .pos-grid,.obj-grid,.pcols,.scene-cols,.pgrid{grid-template-columns:1fr}
   .hero{padding:40px 20px 36px}
@@ -201,6 +232,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
   <button class="tnav-btn" onclick="navTo('objections',this)">Objections</button>
   <button class="tnav-btn" onclick="navTo('targeting',this)">Targeting</button>
   <button class="tnav-btn" onclick="navTo('competitive',this)">Competitive</button>
+  <button class="tnav-btn" onclick="navTo('campaign',this)">Campaign Results</button>
   <button class="tnav-btn" onclick="navTo('email',this)">Email Templates</button>
 </nav>
 
@@ -222,389 +254,501 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
 
 <div class="main">
 
-  <!-- 1. THE PROBLEM -->
-  <div class="section" id="problems">
-    <div class="scene-box">
-      <div class="scene-eyebrow">The world our customers live in</div>
-      <div class="scene-cols">
-        <div>
-          <p class="lead">Every dollar a utility spends has to be approved by a regulator — and defended in a legal proceeding.</p>
-          <p>Utilities are not like normal businesses. They cannot simply invest in their infrastructure and pass the cost on to customers. Every significant investment — a new power line, a gas pipe replacement, a grid upgrade — must be formally justified to a state or federal regulator, who decides whether customers are allowed to pay for it.</p>
-          <p>That process is called a rate case. It is part business plan, part legal proceeding. The utility presents its investment program. Opposing parties — consumer advocates, large industrial customers, sometimes competing utilities — challenge it. A commission of appointed regulators decides what gets approved and what gets cut.</p>
-        </div>
-        <div>
-          <p>The stakes are enormous. A single rate case can cover billions of dollars of investment. One poorly defended project can trigger a line of questioning that unravels an entire program. Teams of engineers, planners, and lawyers work for months — sometimes through the night — to build the case.</p>
-          <p>And the pressure never fully lifts. Even after filing, challengers can send formal discovery requests demanding detailed answers within ten days. A new law can reprice the whole plan overnight. A newly appointed commissioner can change the evidence standard entirely. The regulatory environment shifts constantly while the filed record stays frozen.</p>
-          <p>At the same time, these teams are expected to balance three competing demands: keep customer bills affordable, maintain aging infrastructure, and invest in a modernizing grid. There is no slack. Every decision carries a burden of proof. And getting it wrong costs millions.</p>
-        </div>
+<!-- ========== 1. THE PROBLEM ========== -->
+<div class="section" id="problems">
+  <div class="scene-box">
+    <div class="scene-eyebrow">The world our customers live in</div>
+    <div class="scene-cols">
+      <div>
+        <p class="lead">Rate cases used to reward a well-constructed plan. They now reward a well-defended one.</p>
+        <p>Utilities are not like normal businesses. Every significant investment — a new power line, a gas pipe replacement, a grid upgrade — must be formally justified to a state or federal regulator, who decides whether customers are allowed to pay for it. That process is called a rate case. It is part business plan, part legal proceeding.</p>
+        <p>Opposing parties challenge the utility's investments. A commission of appointed regulators decides what gets approved and what gets cut. One poorly defended project can trigger a line of questioning that unravels an entire program.</p>
       </div>
-      <div class="scene-stats">
-        <div class="scene-stat"><div class="scene-stat-n">Billions</div><div class="scene-stat-l">of capital investment per filing, requiring line-by-line justification</div></div>
-        <div class="scene-stat"><div class="scene-stat-n">10 days</div><div class="scene-stat-l">to respond to formal discovery requests, often spanning dozens of projects</div></div>
-        <div class="scene-stat"><div class="scene-stat-n">$41M+</div><div class="scene-stat-l">cut from a single utility's approved investment after one proceeding shifted against them</div></div>
-        <div class="scene-stat"><div class="scene-stat-n">Manual</div><div class="scene-stat-l">the process today — disconnected systems, time pressure, no structured evidence base</div></div>
+      <div>
+        <p>The pressure never fully lifts. Even after filing, challengers send formal discovery requests with ten-day windows. A new law can reprice the whole plan overnight. A newly appointed commissioner can raise the evidence bar without warning.</p>
+        <p>And here is the deeper problem: the capital plan keeps evolving while the filed record stays frozen. The gap between what a utility filed and what it currently believes is where disallowance risk lives. Intervenors have noticed. So have commissioners. The consistency gap between filings — between the IRP, the rate case, and the discovery response — is now one of the most common paths to disallowance.</p>
+        <p>The utilities holding up under this pressure have made a quiet shift. They have moved from explaining their capital decisions to proving them.</p>
       </div>
     </div>
-    <div class="win-bar">
-      <div class="win-bar-text"><strong>Why only Copperleaf solves this:</strong> Two decades of working alongside utilities on their most complex capital decisions have given Copperleaf a deep understanding of how investment value is actually constructed — the assumptions, trade-offs, benefit-cost logic, and regulatory constraints behind every project. That expertise is embedded in how we work, enabling us to map regulatory signals directly to impacted investments and help teams build evidence that reflects how decisions were truly made. We don't replace regulatory strategy or legal counsel — we make the evidence behind capital decisions faster to produce, easier to defend, and harder to challenge, grounded in industry depth and structured investment data.</div>
+    <div class="scene-stats">
+      <div class="scene-stat"><div class="scene-stat-n">Billions</div><div class="scene-stat-l">of capital per filing, requiring line-by-line justification</div></div>
+      <div class="scene-stat"><div class="scene-stat-n">10 days</div><div class="scene-stat-l">to respond to discovery requests spanning dozens of projects</div></div>
+      <div class="scene-stat"><div class="scene-stat-n">$41M+</div><div class="scene-stat-l">cut from a single utility's approved investment after one proceeding shifted</div></div>
+      <div class="scene-stat"><div class="scene-stat-n">Manual</div><div class="scene-stat-l">the process today — disconnected systems, time pressure, no structured evidence base</div></div>
+    </div>
+  </div>
+  <div class="win-bar">
+    <div class="win-bar-text"><strong>Why only Copperleaf solves this:</strong> Two decades of working alongside utilities on their most complex capital decisions have given Copperleaf a deep understanding of how investment value is actually constructed — the assumptions, trade-offs, benefit-cost logic, and regulatory constraints behind every project. That expertise is embedded in how we work, enabling us to map regulatory signals directly to impacted investments and help teams build evidence that reflects how decisions were truly made. We don't replace regulatory strategy or legal counsel — we make the evidence behind capital decisions faster to produce, easier to defend, and harder to challenge.</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 2. POSITIONING ========== -->
+<div class="section" id="positioning">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Positioning &amp; Tagline</div></div>
+  <p class="sh-desc">The words we use in every conversation, deck, and piece of collateral.</p>
+  <div class="pos-hero">
+    <div><div class="pos-tagline"><span>Irrefutable.</span><br>Defensible.<br>Trusted.</div></div>
+    <div class="pos-right">
+      <div class="pos-label">30-second pitch</div>
+      <div class="pos-pitch">Rate cases used to reward a well-constructed plan. They now reward a well-defended one. The difference comes down to a single shift: from explaining capital decisions to proving them — with cited evidence, versioned assumptions, and a traceable record that holds the same answer across every filing, team, and proceeding. Regulatory Intelligence is the structured assumption register that makes proving possible. Faster to produce, easier to defend, and harder to challenge.</div>
+    </div>
+  </div>
+  <div class="pos-grid">
+    <div class="pos-card"><div class="pc-label">One-line description</div><div class="pc-text">A regulatory workflow that connects live regulatory events to the investments Copperleaf optimizes — giving teams a versioned, traced, citable evidence base that holds up under cross-examination.</div></div>
+    <div class="pos-card"><div class="pc-label">The defining distinction</div><div class="pc-text"><strong>Explain vs. prove.</strong> Explaining is narrative. Proving is cited evidence with a versioned trail. This is the shift the market has made — and the one Regulatory Intelligence enables. Use this pair when you need one sentence that captures everything.</div></div>
+    <div class="pos-card"><div class="pc-label">What it is NOT</div><div class="pc-text">Not a replacement for regulatory strategy or legal counsel. Not a system of record for the entire capital plan. Not a guarantee of rate recovery. It supports the team's strategy for the investments that run through Copperleaf — it does not own that strategy.</div></div>
+    <div class="pos-card"><div class="pc-label">Core unfair advantage</div><div class="pc-text">No other vendor holds the structured investment data — the value drivers, assumptions, and benefit-cost logic — for these customers. A structured assumption register built on top of that data is what makes every claim traceable, every response defensible, every filing consistent.</div></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 3. CAPABILITIES ========== -->
+<div class="section" id="capabilities">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Problems &amp; Capabilities</div></div>
+  <p class="sh-desc">Each entry shows the real-world pain, who experiences it, how Regulatory Intelligence addresses it, and the value delivered. Click to expand.</p>
+
+  <div style="background:var(--p-pale);border:1.5px solid var(--p);border-radius:10px;padding:16px 20px;margin-bottom:20px">
+    <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p-dark);margin-bottom:6px">Govern — the foundation (lead here)</div>
+    <div style="font-size:14px;color:var(--navy);line-height:1.65">The structured assumption register is the capability that makes everything else possible. One versioned, traced, citable record of every assumption that flows into testimony — the same answer across teams, filings, and time. Defend and Watch are downstream consequences of having this in place.</div>
+  </div>
+
+  <div class="track-label track-watch"><span class="tl-dot" style="background:var(--navy-mid)"></span>WATCH — Monitoring &amp; Signal Translation</div>
+
+  <div class="acc">
+    <button class="acc-hdr" onclick="toggleAcc(this)">
+      <div class="acc-num">1</div>
+      <div class="acc-ttl-wrap"><div class="acc-ttl">A law changes and the consistency gap becomes a disallowance risk overnight</div><div class="acc-plain">In plain terms: new legislation can instantly change which projects qualify for cost recovery. But the deeper risk is that the assumptions inside the capital plan — now misaligned with the new rules — are already frozen in filed documents that challengers will cross-reference.</div></div>
+      <div class="acc-chev">▾</div>
+    </button>
+    <div class="acc-body">
+      <div class="block block-pain"><div class="block-label">The pain</div><p>When a legislative amendment or ruling changes rate recovery rules, it doesn't just affect future projects — it creates a consistency gap between what was already filed and what the plan now says. Teams have no structured way to identify which filed assumptions are now inconsistent, which projects are exposed, or what a challenger will find when they cross-reference filings.</p></div>
+      <div class="block block-who"><div class="block-label">Who feels this</div><p>Capital Planning Manager, Regulatory Strategy Lead, VP Regulatory</p></div>
+      <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Regulatory Signal Monitor ingests legislative bills, commission rulings, and docket activity in near real-time via HData across 50+ state PUCs and FERC. The Plan Impact Translation Engine maps each signal to the specific assumptions it affects, identifies which filed positions are now inconsistent, and surfaces what needs to change before the next filing window closes.</p></div>
+      <div class="block-val"><div class="block-label">Value delivered</div><p>The consistency gap is closed before a challenger finds it. Teams arrive at filing windows with a versioned, reconciled assumption register — not a reconstruction exercise under pressure.</p></div>
+      <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">Indiana HB1002 (2023) amended TDSIC cost recovery rules overnight. Duke Energy Indiana, NIPSCO, and AES Indiana had to manually re-examine which projects still cleared the benefit-cost threshold — with no system connecting the bill text to the filed assumptions it invalidated.</div></div>
     </div>
   </div>
 
-  <hr class="divider">
-
-  <!-- 2. POSITIONING -->
-  <div class="section" id="positioning">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Positioning &amp; Tagline</div></div>
-    <p class="sh-desc">The words we use in every conversation, deck, and piece of collateral.</p>
-    <div class="pos-hero">
-      <div><div class="pos-tagline"><span>Irrefutable.</span><br>Defensible.<br>Trusted.</div></div>
-      <div class="pos-right">
-        <div class="pos-label">30-second pitch</div>
-        <div class="pos-pitch">When regulators challenge a capital plan, utilities need to prove their investment decisions, not just explain them. Regulatory Intelligence connects Copperleaf's structured capital plan data to live regulatory signals, helping teams catch exposure before it becomes a problem, build cited evidence for the investments they optimize with us, and respond to discovery requests in hours rather than days. Faster to produce, easier to defend, and harder to challenge.</div>
-      </div>
-    </div>
-    <div class="pos-grid">
-      <div class="pos-card"><div class="pc-label">One-line description</div><div class="pc-text">A regulatory workflow solution that connects live regulatory events to the investments Copperleaf optimizes, helping teams build defensible evidence and respond to challenge faster.</div></div>
-      <div class="pos-card"><div class="pc-label">What it is NOT</div><div class="pc-text">Not a replacement for regulatory strategy or legal counsel. Not a system of record for the entire capital plan. Not a guarantee of rate recovery. It supports the team's strategy for the investments that run through Copperleaf — it does not own that strategy.</div></div>
-      <div class="pos-card"><div class="pc-label">Core unfair advantage</div><div class="pc-text">For the investments optimized through Copperleaf, we hold richer structured data on how those decisions were made than any other vendor. That makes the evidence faster to build and harder to challenge.</div></div>
-      <div class="pos-card"><div class="pc-label">The honest scope</div><div class="pc-text">The product works for the portion of the capital plan that runs through Copperleaf. Customers who optimize their full investment program with us get the full benefit. Partial deployments get proportional value.</div></div>
+  <div class="acc">
+    <button class="acc-hdr" onclick="toggleAcc(this)">
+      <div class="acc-num">2</div>
+      <div class="acc-ttl-wrap"><div class="acc-ttl">A new regulator is appointed and the evidence standard shifts without warning</div><div class="acc-plain">In plain terms: a new commissioner with a sharper affordability focus doesn't just change the mood — it changes what the filed record needs to prove. Teams with a structured assumption register already know what their evidence says. Teams without one are guessing.</div></div>
+      <div class="acc-chev">▾</div>
+    </button>
+    <div class="acc-body">
+      <div class="block block-pain"><div class="block-label">The pain</div><p>In most US states, commission members are appointed by the governor — meaning election outcomes directly influence the evidence standard within a utility's 7-year capital program. There is no systematic way to score this risk against a pending filing before it is submitted, or to identify which filed assumptions are most exposed to a new commissioner's posture.</p></div>
+      <div class="block block-who"><div class="block-label">Who feels this</div><p>VP Regulatory, Regulatory Strategy Lead</p></div>
+      <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Jurisdictional Configuration Engine tracks each commissioner's prior rulings, affordability posture, appointing governor, and term dates via HData. When composition changes, the system scores pending filings for exposure — not just which projects are at risk, but which assumptions in the structured register are most likely to be challenged based on the new commissioner's history.</p></div>
+      <div class="block-val"><div class="block-label">Value delivered</div><p>The team knows what the new commissioner will look for before the filing is submitted. The assumption register already holds the versioned, cited evidence that addresses that posture — strategy instead of triage.</p></div>
+      <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">A new IURC commissioner with a sharper affordability focus contributed to NIPSCO's recovery request being cut by $41M. That outcome was predictable from prior rulings — but nobody had indexed those positions against the filed assumptions before submission.</div></div>
     </div>
   </div>
 
-  <hr class="divider">
+  <div class="acc">
+    <button class="acc-hdr" onclick="toggleAcc(this)">
+      <div class="acc-num">3</div>
+      <div class="acc-ttl-wrap"><div class="acc-ttl">Multiple simultaneous proceedings expose every inconsistency to public challenge</div><div class="acc-plain">In plain terms: when a utility has several open proceedings at once, every inconsistency between them becomes a discovery target. The consistency gap multiplies with every additional filing.</div></div>
+      <div class="acc-chev">▾</div>
+    </button>
+    <div class="acc-body">
+      <div class="block block-pain"><div class="block-label">The pain</div><p>Multi-jurisdiction filers face compounding consistency risk. What the IRP said, what the rate case said, and what the discovery response says are supposed to tell one consistent story. They rarely do — not because the work is sloppy, but because the plan keeps moving while each filing stays frozen at the moment it was submitted. Intervenors cross-reference filings. The gaps are found.</p></div>
+      <div class="block block-who"><div class="block-label">Who feels this</div><p>Capital Planning Manager, VP Regulatory, Regulatory Strategy Lead</p></div>
+      <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>Active proceedings are monitored simultaneously across all relevant PUCs and FERC. As each ruling lands, the Plan Impact Translation Engine assesses its effect on the structured assumption register, flags which filed positions are now inconsistent, and maintains one reconciled version of the evidence base across all active proceedings.</p></div>
+      <div class="block-val"><div class="block-label">Value delivered</div><p>One consistent evidence base across every active proceeding. Challengers find a coherent narrative, not a consistency gap.</p></div>
+      <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">Ameren Illinois faced four simultaneous ICC adverse orders between December 2023 and January 2026 while $31.8B in committed capital sat in an unresolved recovery regime. No tool was tracking all four threads and reconciling the filed assumptions as each ruling landed.</div></div>
+    </div>
+  </div>
 
-  <!-- 3. CAPABILITIES -->
-  <div class="section" id="capabilities">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Problems &amp; Capabilities</div></div>
-    <p class="sh-desc">Each entry shows the real-world pain in plain terms, who experiences it, how Regulatory Intelligence addresses it, and the business value delivered. Click to expand.</p>
-    <div class="track-label track-watch"><span class="tl-dot" style="background:var(--navy-mid)"></span>WATCH — Monitoring &amp; Signal Translation</div>
-    <div class="acc">
-      <button class="acc-hdr" onclick="toggleAcc(this)">
-        <div class="acc-num">1</div>
-        <div class="acc-ttl-wrap"><div class="acc-ttl">A law changes and the entire investment plan needs repricing overnight</div><div class="acc-plain">In plain terms: new legislation can instantly change which utility projects qualify for cost recovery and at what rate. Today, teams find out too late and scramble manually.</div></div>
-        <div class="acc-chev">▾</div>
-      </button>
-      <div class="acc-body">
-        <div class="block block-pain"><div class="block-label">The pain</div><p>Regulatory events such as legislative amendments, new court rulings, or changes to rate recovery rules can instantly reprice a utility's entire investment program. Capital planning teams have no structured system to identify which projects are now at risk, by how much, or what to do next. The analysis happens manually and too late.</p></div>
-        <div class="block block-who"><div class="block-label">Who feels this</div><p>Capital Planning Manager, Regulatory Strategy Lead, VP Regulatory</p></div>
-        <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Regulatory Signal Monitor ingests legislative bills, commission rulings, and docket activity in near real-time from HData's feed covering 50+ state PUCs and FERC. The Plan Impact Translation Engine maps each signal to affected investments, shows the direction of exposure, and surfaces recommended next steps before the next filing window closes.</p></div>
-        <div class="block-val"><div class="block-label">Value delivered</div><p>Exposure is identified in hours, not weeks. Teams arrive at filing windows with a ranked action list rather than discovering problems mid-proceeding.</p></div>
-        <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">Indiana HB1002 (2023) amended TDSIC cost recovery rules overnight. Duke Energy Indiana, NIPSCO, and AES Indiana all had to manually re-examine which projects still cleared the required benefit-cost threshold under the new rules. No system connected the bill text to the affected investments automatically.</div></div>
-      </div>
+  <div class="track-label track-defend" style="margin-top:24px"><span class="tl-dot" style="background:#0057B0"></span>DEFEND — Filing Preparation &amp; Discovery Response</div>
+  <div style="background:var(--blue-pale);border:1px solid var(--border);border-radius:8px;padding:12px 16px;margin-bottom:12px;font-size:13px;color:#0057B0;line-height:1.6"><strong>Govern first:</strong> Defend capabilities are the downstream consequence of having a structured assumption register in place. Lead with the Govern thesis — Defend becomes compelling once the buyer understands that the register is what makes fast, cited, defensible responses possible.</div>
+
+  <div class="acc">
+    <button class="acc-hdr" onclick="toggleAcc(this)">
+      <div class="acc-num">4</div>
+      <div class="acc-ttl-wrap"><div class="acc-ttl">Discovery arrives Friday. The team has to build their case from scratch.</div><div class="acc-plain">In plain terms: without a structured assumption register already in place, every discovery request triggers a manual reconstruction — pulling data from disconnected systems, under pressure, with no consistent evidence base to draw from. With the register, discovery becomes a workflow.</div></div>
+      <div class="acc-chev">▾</div>
+    </button>
+    <div class="acc-body">
+      <div class="block block-pain"><div class="block-label">The pain</div><p>Intervenor requests arrive with ten-day windows. Answering them requires pulling data from multiple disconnected systems across dozens of engineers under pressure. The underlying knowledge exists inside the utility — it just isn't structured, versioned, or cited in a way that holds up under cross-examination. One slow, poorly grounded response contributed to a 30% reduction in approved capital investment at a major US utility.</p></div>
+      <div class="block block-who"><div class="block-label">Who feels this</div><p>Regulatory Strategy Lead, Regulatory Affairs Attorney</p></div>
+      <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Intervenor Request Accelerator draws on the structured assumption register to generate cited draft responses in hours. Every response traces to a specific source field and data record in the register. If a question cannot be answered from the existing record, the system flags it rather than generating an unsupported answer. Attorneys review and approve — nothing enters the proceeding without explicit sign-off.</p></div>
+      <div class="block-val"><div class="block-label">Value delivered</div><p>Discovery becomes a workflow, not a war room. Response time drops from 3 to 5 days to under 4 hours. The attorney review queue replaces a chaotic cross-team scramble — and every answer traces to the same versioned register the IRP and rate case were built from.</p></div>
+      <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">Indiana's OUCC systematically challenged Duke Energy's value model methodology. The Commission directed Duke toward greater transparency — now a hard constraint on every subsequent filing. The consistency between methodology in the register and what appears in testimony is what the next proceeding will test.</div></div>
     </div>
-    <div class="acc">
-      <button class="acc-hdr" onclick="toggleAcc(this)">
-        <div class="acc-num">2</div>
-        <div class="acc-ttl-wrap"><div class="acc-ttl">A new regulator is appointed and the bar for approval shifts without warning</div><div class="acc-plain">In plain terms: the people who decide whether investments get approved change over time. A new commissioner with different priorities can mean the same evidence that worked last year no longer passes.</div></div>
-        <div class="acc-chev">▾</div>
-      </button>
-      <div class="acc-body">
-        <div class="block block-pain"><div class="block-label">The pain</div><p>In most US states, utility commission members are appointed by the governor, meaning elections directly influence the regulatory environment within a utility's 7-year capital program. A commissioner focused on affordability changes the evidence standard for the entire proceeding. There is no systematic way to score this risk against a pending filing before it is submitted.</p></div>
-        <div class="block block-who"><div class="block-label">Who feels this</div><p>VP Regulatory, Regulatory Strategy Lead</p></div>
-        <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Jurisdictional Configuration Engine, fed by HData's commissioner profiles, tracks each commissioner's prior rulings, affordability posture, appointing governor, and term dates. When composition changes, the system scores pending filings for exposure and surfaces filing strategy implications before submission.</p></div>
-        <div class="block-val"><div class="block-label">Value delivered</div><p>A commissioner change no longer catches the team off guard. Filing strategy adapts before submission rather than after an unexpected capital cut.</p></div>
-        <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">A new IURC commissioner with a sharper affordability focus contributed to NIPSCO's investment recovery request being cut by $41M. That outcome was predictable from prior rulings, but nobody had indexed those positions against the pending filing before it was submitted.</div></div>
-      </div>
+  </div>
+
+  <div class="acc">
+    <button class="acc-hdr" onclick="toggleAcc(this)">
+      <div class="acc-num">5</div>
+      <div class="acc-ttl-wrap"><div class="acc-ttl">Engineers spend months writing project justifications from scratch every filing cycle</div><div class="acc-plain">In plain terms: the knowledge exists in Copperleaf. But without a structured assumption register, it can't be cited. So engineers rebuild it manually, every cycle, from memory — with no reusable output and no traceable trail.</div></div>
+      <div class="acc-chev">▾</div>
+    </button>
+    <div class="acc-body">
+      <div class="block block-pain"><div class="block-label">The pain</div><p>Each filing cycle requires written justifications for 75 or more capital projects. Engineers spend a month or more pulling together information already in Copperleaf — with no structured template, no reusable output, and no citeable trail back to the assumptions that drove the decision. The same effort repeats every cycle. The knowledge is there. It just isn't structured.</p></div>
+      <div class="block block-who"><div class="block-label">Who feels this</div><p>Engineers and Project Owners, Capital Planning Manager</p></div>
+      <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Project Justification Evidence Base draws on the structured assumption register to auto-generate a first-draft justification for every project — linking scope, value drivers, timing rationale, and statutory alignment. Engineers review and enrich rather than rebuild from scratch. The output is reusable, consistently formatted, and citable across every subsequent proceeding.</p></div>
+      <div class="block-val"><div class="block-label">Value delivered</div><p>Months of manual assembly reduced to days of review. One structured, versioned evidence base — built once, cited always.</p></div>
     </div>
-    <div class="acc">
-      <button class="acc-hdr" onclick="toggleAcc(this)">
-        <div class="acc-num">3</div>
-        <div class="acc-ttl-wrap"><div class="acc-ttl">Multiple simultaneous legal proceedings create overlapping uncertainty with no single view</div><div class="acc-plain">In plain terms: utilities often have several open regulatory cases at once. When one ruling changes the picture, teams need to understand how it affects all their other proceedings too.</div></div>
-        <div class="acc-chev">▾</div>
-      </button>
-      <div class="acc-body">
-        <div class="block block-pain"><div class="block-label">The pain</div><p>Large utilities manage multiple simultaneous proceedings across different jurisdictions. Each ruling changes recovery assumptions, but there is no tool that tracks all threads together and recalculates total capital exposure as each ruling lands.</p></div>
-        <div class="block block-who"><div class="block-label">Who feels this</div><p>Capital Planning Manager, VP Regulatory, Regulatory Strategy Lead</p></div>
-        <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>Active proceedings are monitored across all relevant state PUCs and FERC simultaneously. As each ruling lands, the Plan Impact Translation Engine assesses its effect on recovery assumptions, flags affected investments, and updates the total portfolio exposure view in one place.</p></div>
-        <div class="block-val"><div class="block-label">Value delivered</div><p>The total exposure envelope is always current and visible in one place, rather than reconstructed retroactively from separate docket files under pressure.</p></div>
-        <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">Ameren Illinois faced four simultaneous ICC adverse orders between December 2023 and January 2026, while $31.8B in committed capital sat in an unresolved recovery regime. A concurrent FERC ruling threatened a further $19M per year. No single tool tracked all four threads together.</div></div>
-      </div>
+  </div>
+
+  <div class="acc">
+    <button class="acc-hdr" onclick="toggleAcc(this)">
+      <div class="acc-num">6</div>
+      <div class="acc-ttl-wrap"><div class="acc-ttl">The plan keeps evolving. The filed record is frozen. Challengers will ask.</div><div class="acc-plain">In plain terms: the gap between "what we filed" and "what we believe now" widens with every passing month. Without a versioned record, answering "what were your numbers on filing day" means reconstructing analysis under litigation pressure.</div></div>
+      <div class="acc-chev">▾</div>
+    </button>
+    <div class="acc-body">
+      <div class="block block-pain"><div class="block-label">The pain</div><p>Capital plans continue to evolve after filing. When discovery arrives months later and asks what the plan showed on filing day — or why a specific value changed — teams reconstruct analysis under litigation pressure. The reconstruction introduces inconsistencies. The inconsistencies become new lines of challenge.</p></div>
+      <div class="block block-who"><div class="block-label">Who feels this</div><p>Capital Planning Manager, Regulatory Affairs Attorney, Regulatory Strategy Lead</p></div>
+      <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Filing Snapshot Service captures a permanent, immutable copy of the structured assumption register at the exact moment of filing, with a versioned log of every change since. "What were your numbers on filing day" becomes a minutes-long query — and the answer traces directly back to the same register every other response is built from.</p></div>
+      <div class="block-val"><div class="block-label">Value delivered</div><p>The frozen record problem is solved structurally. Every discovery response is anchored to an immutable, versioned register. No reconstruction. No new exposure. One consistent answer across every moment in the proceeding timeline.</p></div>
     </div>
-    <div class="track-label track-defend" style="margin-top:24px"><span class="tl-dot" style="background:#0057B0"></span>DEFEND — Filing Preparation &amp; Discovery Response</div>
-    <div class="acc">
-      <button class="acc-hdr" onclick="toggleAcc(this)">
-        <div class="acc-num">4</div>
-        <div class="acc-ttl-wrap"><div class="acc-ttl">Challengers demand answers in ten days and the team has to build their case from scratch</div><div class="acc-plain">In plain terms: opposing parties can send formal questions requiring detailed responses under tight deadlines. Answering them means pulling data from multiple systems manually, under pressure, with no organized evidence base.</div></div>
-        <div class="acc-chev">▾</div>
-      </button>
-      <div class="acc-body">
-        <div class="block block-pain"><div class="block-label">The pain</div><p>Intervenor discovery requests arrive with response windows as short as ten days. Answering them requires pulling data from multiple disconnected systems across dozens of engineers under pressure. One slow, poorly grounded response contributed to a 30% reduction in approved capital investment at a major US utility.</p></div>
-        <div class="block block-who"><div class="block-label">Who feels this</div><p>Regulatory Strategy Lead, Regulatory Affairs Attorney</p></div>
-        <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Intervenor Request Accelerator generates draft responses in hours, fully cited against the filed record. If a question cannot be answered from the record, the system flags it. Attorneys review each draft before anything is submitted — enforced as a hard workflow gate.</p></div>
-        <div class="block-val"><div class="block-label">Value delivered</div><p>Response time drops from 3 to 5 days to under 4 hours. No unsupported claims reach the record. The attorney review queue replaces a chaotic cross-team scramble.</p></div>
-        <div class="real-eg"><div class="re-tag">Real example</div><div class="re-text">Indiana's OUCC systematically challenged Duke Energy's investment value model methodology. The Commission directed Duke toward greater transparency in its next filing cycle — now a hard constraint on how the plan must be prepared.</div></div>
-      </div>
-    </div>
-    <div class="acc">
-      <button class="acc-hdr" onclick="toggleAcc(this)">
-        <div class="acc-num">5</div>
-        <div class="acc-ttl-wrap"><div class="acc-ttl">Engineers spend months writing project justifications from scratch every filing cycle</div><div class="acc-plain">In plain terms: for each filing, engineers must individually justify why every project is worth approving. With 75 or more projects per cycle, this is enormously time-consuming manual work using data that already exists in Copperleaf.</div></div>
-        <div class="acc-chev">▾</div>
-      </button>
-      <div class="acc-body">
-        <div class="block block-pain"><div class="block-label">The pain</div><p>Each filing cycle requires individual written justifications for 75 or more capital projects. Engineers spend a month or more pulling together information that already exists in Copperleaf, with no structured template or reusable output. The work repeats every cycle from scratch.</p></div>
-        <div class="block block-who"><div class="block-label">Who feels this</div><p>Engineers and Project Owners, Capital Planning Manager</p></div>
-        <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Project Justification Evidence Base auto-generates a first-draft justification for every project, sourced from existing Copperleaf data — linking scope, value drivers, timing rationale, and statutory alignment. Engineers review and enrich rather than building from scratch.</p></div>
-        <div class="block-val"><div class="block-label">Value delivered</div><p>Months of manual assembly reduced to days of review. The evidence base is reusable, consistently formatted, and citable across every proceeding.</p></div>
-      </div>
-    </div>
-    <div class="acc">
-      <button class="acc-hdr" onclick="toggleAcc(this)">
-        <div class="acc-num">6</div>
-        <div class="acc-ttl-wrap"><div class="acc-ttl">The investment plan keeps changing but the legal filing is frozen in time</div><div class="acc-plain">In plain terms: when you file a rate case, that document becomes the official record. But your investment plan keeps evolving. Months later, when challengers ask "what were your numbers when you filed?", there is no clean way to answer.</div></div>
-        <div class="acc-chev">▾</div>
-      </button>
-      <div class="acc-body">
-        <div class="block block-pain"><div class="block-label">The pain</div><p>Capital plans continue to evolve after filing. When discovery requests arrive months later asking what the plan showed on filing day, teams reconstruct analysis under litigation pressure — introducing inconsistencies and creating new legal exposure.</p></div>
-        <div class="block block-who"><div class="block-label">Who feels this</div><p>Capital Planning Manager, Regulatory Affairs Attorney, Regulatory Strategy Lead</p></div>
-        <div class="block block-sol"><div class="block-label">How Regulatory Intelligence addresses this</div><p>The Filing Snapshot Service captures a permanent, immutable copy of the capital plan at the exact moment of filing, with a queryable log of every change since. "What were your numbers on filing day" becomes a minutes-long query.</p></div>
-        <div class="block-val"><div class="block-label">Value delivered</div><p>Eliminates reconstructed analysis under legal pressure. Every discovery response is anchored to an auditable, immutable record attorneys can trust and cite with confidence.</p></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 4. PERSONAS ========== -->
+<div class="section" id="personas">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Buyer &amp; User Personas</div></div>
+  <p class="sh-desc">Click a persona to see their role, daily pain, and what this product delivers. The economic buyer is the VP Regulatory.</p>
+
+  <div style="background:var(--navy);border-radius:14px;padding:28px 32px;margin-bottom:24px;position:relative;overflow:hidden">
+    <div style="position:absolute;left:-20px;top:-10px;font-size:120px;font-weight:900;color:rgba(185,122,232,0.12);line-height:1;pointer-events:none;user-select:none">"</div>
+    <div style="position:absolute;right:-10px;bottom:-20px;font-size:120px;font-weight:900;color:rgba(185,122,232,0.08);line-height:1;pointer-events:none;user-select:none">"</div>
+    <div style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--p-light);margin-bottom:20px;position:relative">From the field — in their own words</div>
+    <div id="quoteDisplay" style="position:relative;min-height:100px"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.08)">
+      <div style="display:flex;gap:6px" id="quoteDots"></div>
+      <div style="display:flex;gap:8px">
+        <button onclick="prevQuote()" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.6);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;font-family:inherit">&#8249;</button>
+        <button onclick="nextQuote()" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.6);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;font-family:inherit">&#8250;</button>
       </div>
     </div>
   </div>
 
-  <hr class="divider">
+  <div class="ptabs">
+    <button class="ptab active" onclick="showP('reg-lead',this)">Regulatory Strategy Lead</button>
+    <button class="ptab" onclick="showP('cap-mgr',this)">Capital Planning Manager</button>
+    <button class="ptab" onclick="showP('engineer',this)">Engineer / Project Owner</button>
+    <button class="ptab" onclick="showP('attorney',this)">Regulatory Attorney</button>
+    <button class="ptab" onclick="showP('vp',this)">VP Regulatory <span class="buyer-tag">Buyer</span></button>
+  </div>
 
-  <!-- 4. PERSONAS -->
-  <div class="section" id="personas">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Buyer &amp; User Personas</div></div>
-    <p class="sh-desc">Click a persona to see their role, daily pain, and what this product delivers. The economic buyer is the VP Regulatory.</p>
-    <div style="background:var(--navy);border-radius:14px;padding:28px 32px;margin-bottom:24px;position:relative;overflow:hidden">
-      <div style="position:absolute;left:-20px;top:-10px;font-size:120px;font-weight:900;color:rgba(185,122,232,0.12);line-height:1;pointer-events:none;user-select:none">"</div>
-      <div style="position:absolute;right:-10px;bottom:-20px;font-size:120px;font-weight:900;color:rgba(185,122,232,0.08);line-height:1;pointer-events:none;user-select:none">"</div>
-      <div style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--p-light);margin-bottom:20px;position:relative">From the field — in their own words</div>
-      <div id="quoteDisplay" style="position:relative;min-height:100px"></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.08)">
-        <div style="display:flex;gap:6px" id="quoteDots"></div>
-        <div style="display:flex;gap:8px">
-          <button onclick="prevQuote()" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.6);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;font-family:inherit">&#8249;</button>
-          <button onclick="nextQuote()" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.6);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;font-family:inherit">&#8250;</button>
-        </div>
+  <div class="ppanel active" id="pp-reg-lead">
+    <div class="pcard"><div class="ptop"><div class="pavatar">RL</div><div><div class="pname">Regulatory Strategy Lead</div><div class="prole">e.g. Andrew at Duke Energy — owns the rate case from plan to settlement</div></div></div>
+    <div class="pbody"><div class="pcols">
+      <div><div class="pct pain">Pain today</div>
+        <div class="pitem"><div class="pdot pain"></div>Discovery arrives Friday with a 10-day window. The underlying knowledge exists — but it isn't structured, versioned, or citeable, so the team rebuilds it manually under pressure.</div>
+        <div class="pitem"><div class="pdot pain"></div>One poorly grounded response contributed to a 30% reduction in approved capital at a peer utility.</div>
+        <div class="pitem"><div class="pdot pain"></div>No structured way to know which filed assumptions are now inconsistent with regulatory signals that arrived after filing.</div>
+      </div>
+      <div><div class="pct gain">What this product gives them</div>
+        <div class="pitem"><div class="pdot gain"></div>A structured assumption register means discovery becomes a workflow — cited draft responses in hours, every answer traced to the same register the filing was built from.</div>
+        <div class="pitem"><div class="pdot gain"></div>Proactive exposure alerts when regulatory signals create consistency gaps in the filed record.</div>
+        <div class="pitem"><div class="pdot gain"></div>Never reconstruct analysis under litigation pressure again.</div>
       </div>
     </div>
-    <div class="ptabs">
-      <button class="ptab active" onclick="showP('reg-lead',this)">Regulatory Strategy Lead</button>
-      <button class="ptab" onclick="showP('cap-mgr',this)">Capital Planning Manager</button>
-      <button class="ptab" onclick="showP('engineer',this)">Engineer / Project Owner</button>
-      <button class="ptab" onclick="showP('attorney',this)">Regulatory Attorney</button>
-      <button class="ptab" onclick="showP('vp',this)">VP Regulatory <span class="buyer-tag">Buyer</span></button>
+    <div class="pquote">"We cannot create something new to answer a discovery question. Every response must trace back to the existing record."</div>
+    </div></div>
+  </div>
+
+  <div class="ppanel" id="pp-cap-mgr">
+    <div class="pcard"><div class="ptop"><div class="pavatar">CM</div><div><div class="pname">Capital Planning Manager</div><div class="prole">e.g. Matt at National Grid — runs the Copperleaf optimization and owns the capital plan</div></div></div>
+    <div class="pbody"><div class="pcols">
+      <div><div class="pct pain">Pain today</div>
+        <div class="pitem"><div class="pdot pain"></div>"What changed and why?" — the plan keeps evolving but the filed record is frozen. When discovery asks what the numbers were on filing day, there is no clean answer.</div>
+        <div class="pitem"><div class="pdot pain"></div>No versioned record of assumptions means every challenge requires a reconstruction — which introduces new inconsistencies.</div>
+        <div class="pitem"><div class="pdot pain"></div>Cannot quickly identify which filed assumptions are exposed when a regulatory signal changes the underlying logic.</div>
+      </div>
+      <div><div class="pct gain">What this product gives them</div>
+        <div class="pitem"><div class="pdot gain"></div>A versioned, immutable snapshot of the assumption register at filing — with a queryable change log. "What were your numbers on filing day" answered in minutes.</div>
+        <div class="pitem"><div class="pdot gain"></div>When signals arrive, the register shows exactly which assumptions are exposed and in what direction.</div>
+        <div class="pitem"><div class="pdot gain"></div>One consistent evidence base — the same answer across the IRP, the rate case, and every discovery response.</div>
+      </div>
     </div>
-    <div class="ppanel active" id="pp-reg-lead">
-      <div class="pcard"><div class="ptop"><div class="pavatar">RL</div><div><div class="pname">Regulatory Strategy Lead</div><div class="prole">e.g. Andrew at Duke Energy — owns the rate case from plan to settlement</div></div></div>
-      <div class="pbody"><div class="pcols">
-        <div><div class="pct pain">Pain today</div>
-          <div class="pitem"><div class="pdot pain"></div>Discovery requests arrive Friday with a 10-day window. Responding takes 3 to 5 days of manual work across multiple systems.</div>
-          <div class="pitem"><div class="pdot pain"></div>One slow, inconsistent response contributed to a 30% reduction in approved capital investment at a peer utility.</div>
-          <div class="pitem"><div class="pdot pain"></div>No structured way to monitor how regulatory developments affect cost recovery before they become a filing problem.</div>
-        </div>
-        <div><div class="pct gain">What this product gives them</div>
-          <div class="pitem"><div class="pdot gain"></div>Discovery response drafts ready for attorney review in under 4 hours, fully grounded in the filed record.</div>
-          <div class="pitem"><div class="pdot gain"></div>Proactive exposure alerts when regulatory signals affect plan assumptions, before the next filing window.</div>
-          <div class="pitem"><div class="pdot gain"></div>Never generate new analysis under litigation pressure again.</div>
-        </div>
-      </div><div class="pquote">"We cannot create something new to answer a discovery question. Every response must trace back to the existing record."</div></div></div>
+    <div class="pquote">"The plan as filed is a snapshot in time. Every question in discovery refers back to that snapshot — but we have not kept it."</div>
+    </div></div>
+  </div>
+
+  <div class="ppanel" id="pp-engineer">
+    <div class="pcard"><div class="ptop"><div class="pavatar">EN</div><div><div class="pname">Engineer / Project Owner</div><div class="prole">75+ per filing cycle — responsible for justifying each project in the filing</div></div></div>
+    <div class="pbody"><div class="pcols">
+      <div><div class="pct pain">Pain today</div>
+        <div class="pitem"><div class="pdot pain"></div>A month or more of manual work building project justifications from data that already exists in Copperleaf — with no reusable output and no citable trail.</div>
+        <div class="pitem"><div class="pdot pain"></div>The same effort repeats every cycle because the knowledge is never structured into a versioned register.</div>
+        <div class="pitem"><div class="pdot pain"></div>No clear traceable linkage between the investment decision and the assumption that justified it.</div>
+      </div>
+      <div><div class="pct gain">What this product gives them</div>
+        <div class="pitem"><div class="pdot gain"></div>Auto-generated first-draft justifications sourced from the structured assumption register — review and enrich rather than rebuild from scratch.</div>
+        <div class="pitem"><div class="pdot gain"></div>Every justification is versioned, citable, and consistent with every other filing that draws from the same register.</div>
+        <div class="pitem"><div class="pdot gain"></div>Built once. Cited always. The work does not repeat.</div>
+      </div>
     </div>
-    <div class="ppanel" id="pp-cap-mgr">
-      <div class="pcard"><div class="ptop"><div class="pavatar">CM</div><div><div class="pname">Capital Planning Manager</div><div class="prole">e.g. Matt at National Grid — runs the Copperleaf optimization and owns the capital plan</div></div></div>
-      <div class="pbody"><div class="pcols">
-        <div><div class="pct pain">Pain today</div>
-          <div class="pitem"><div class="pdot pain"></div>"What changed and why?" — when values shift between filing and discovery, there is no quick way to explain it.</div>
-          <div class="pitem"><div class="pdot pain"></div>The plan keeps evolving but the filed record is frozen. No structured way to reconcile the two under pressure.</div>
-          <div class="pitem"><div class="pdot pain"></div>Cannot quickly identify which investments are exposed when a regulatory signal changes underlying assumptions.</div>
-        </div>
-        <div><div class="pct gain">What this product gives them</div>
-          <div class="pitem"><div class="pdot gain"></div>A permanent snapshot of the plan at filing with a queryable change log. "What were your numbers on filing day" answered in minutes.</div>
-          <div class="pitem"><div class="pdot gain"></div>Directional impact assessment when signals arrive showing which investments are exposed and why.</div>
-          <div class="pitem"><div class="pdot gain"></div>Maintained alignment between the evolving plan and the filed record throughout the proceeding.</div>
-        </div>
-      </div><div class="pquote">"The plan as filed is a snapshot in time. Every question in discovery refers back to that snapshot — but we have not kept it."</div></div></div>
+    <div class="pquote">"I spend weeks assembling justifications from data I know is already in the system. There has to be a better way."</div>
+    </div></div>
+  </div>
+
+  <div class="ppanel" id="pp-attorney">
+    <div class="pcard"><div class="ptop"><div class="pavatar">AT</div><div><div class="pname">Regulatory Affairs Attorney</div><div class="prole">Reviews everything before it enters the proceeding record — the final gate</div></div></div>
+    <div class="pbody"><div class="pcols">
+      <div><div class="pct pain">Pain today</div>
+        <div class="pitem"><div class="pdot pain"></div>Every response must trace to pre-existing data. Any new analysis generated under pressure is a procedural red flag and a potential line of new challenge.</div>
+        <div class="pitem"><div class="pdot pain"></div>Manually validates citations across disconnected systems under tight IR deadlines with no structured register to draw from.</div>
+        <div class="pitem"><div class="pdot pain"></div>The consistency gap between filings is the most common thing intervenors find — and the hardest thing to defend without a versioned record.</div>
+      </div>
+      <div><div class="pct gain">What this product gives them</div>
+        <div class="pitem"><div class="pdot gain"></div>Every AI-generated response shows its source citation inline — traced directly to the structured assumption register.</div>
+        <div class="pitem"><div class="pdot gain"></div>Hard workflow gate: nothing enters the record without explicit attorney sign-off. Enforced by the system.</div>
+        <div class="pitem"><div class="pdot gain"></div>If a question cannot be answered from the register, the system flags it — it never generates an unsupported answer.</div>
+      </div>
     </div>
-    <div class="ppanel" id="pp-engineer">
-      <div class="pcard"><div class="ptop"><div class="pavatar">EN</div><div><div class="pname">Engineer / Project Owner</div><div class="prole">75+ per filing cycle — responsible for justifying each project in the filing</div></div></div>
-      <div class="pbody"><div class="pcols">
-        <div><div class="pct pain">Pain today</div>
-          <div class="pitem"><div class="pdot pain"></div>A month or more of manual work assembling project justifications from data that already exists in Copperleaf.</div>
-          <div class="pitem"><div class="pdot pain"></div>Evidence is never in a reusable or citable format, so the same effort repeats every cycle.</div>
-          <div class="pitem"><div class="pdot pain"></div>No clear documented linkage between each investment decision and the specific risk it mitigates.</div>
-        </div>
-        <div><div class="pct gain">What this product gives them</div>
-          <div class="pitem"><div class="pdot gain"></div>Auto-generated first-draft justifications for every project, sourced directly from existing Copperleaf data.</div>
-          <div class="pitem"><div class="pdot gain"></div>Review and enrich rather than build from scratch. Structured, reusable, citable evidence every cycle.</div>
-          <div class="pitem"><div class="pdot gain"></div>Clear traceable linkage between each project and the risk it addresses.</div>
-        </div>
-      </div><div class="pquote">"I spend weeks assembling justifications from data I know is already in the system. There has to be a better way."</div></div></div>
+    <div class="pquote">"We will not create something new to answer a discovery question. If it is not already in the record, we say we will supplement."</div>
+    <div class="p-signal">
+      <div class="p-signal-label">Phase 1 validated — Managing Counsel: 7.03% CTR</div>
+      <div class="p-signal-text">Managing Counsel was the single highest-performing title in the Phase 1 campaign. Legal-adjacent roles (Principal 4.72%, Chairperson 3.49%) all dramatically over-indexed on Govern. Lead with the consistency gap angle — the risk that assumptions across filings tell conflicting stories under cross-examination. Never lead with speed or workflow.</div>
     </div>
-    <div class="ppanel" id="pp-attorney">
-      <div class="pcard"><div class="ptop"><div class="pavatar">AT</div><div><div class="pname">Regulatory Affairs Attorney</div><div class="prole">Reviews everything before it enters the proceeding record — the final gate</div></div></div>
-      <div class="pbody"><div class="pcols">
-        <div><div class="pct pain">Pain today</div>
-          <div class="pitem"><div class="pdot pain"></div>Every response must trace to pre-existing data. Any new analysis generated under pressure is a procedural red flag.</div>
-          <div class="pitem"><div class="pdot pain"></div>Manually validates citations across disconnected systems under tight IR deadlines.</div>
-          <div class="pitem"><div class="pdot pain"></div>No structured review queue, so exposure risk scales with volume and time pressure.</div>
-        </div>
-        <div><div class="pct gain">What this product gives them</div>
-          <div class="pitem"><div class="pdot gain"></div>A review queue where every AI-generated response displays its source citation inline.</div>
-          <div class="pitem"><div class="pdot gain"></div>Hard workflow gate: nothing enters the record without explicit attorney sign-off, enforced by the system.</div>
-          <div class="pitem"><div class="pdot gain"></div>If a question cannot be answered from the filed record, the system flags it rather than generating an unsupported answer.</div>
-        </div>
-      </div><div class="pquote">"We will not create something new to answer a discovery question. If it is not already in the record, we say we will supplement."</div></div></div>
+    </div></div>
+  </div>
+
+  <div class="ppanel" id="pp-vp">
+    <div class="pcard"><div class="ptop"><div class="pavatar" style="background:var(--p-dark)">VP</div><div><div class="pname">VP Regulatory / Executive <span class="buyer-tag">Economic Buyer</span></div><div class="prole">e.g. Tim at National Grid — translates the capital plan into the regulatory story for commissioners and boards</div></div></div>
+    <div class="pbody"><div class="pcols">
+      <div><div class="pct pain">Pain today</div>
+        <div class="pitem"><div class="pdot pain"></div>Fighting internally for capital funding before fighting externally for rate recovery — and needing a portfolio story that holds up for commissioners, CFOs, and boards simultaneously.</div>
+        <div class="pitem"><div class="pdot pain"></div>No structured way to prove affordability or articulate residual risk with a versioned, cited evidence trail that survives cross-examination.</div>
+        <div class="pitem"><div class="pdot pain"></div>The consistency gap between the IRP, the rate case, and discovery responses is where disallowance risk lives — and it is largely invisible until a challenger finds it.</div>
+      </div>
+      <div><div class="pct gain">What this product gives them</div>
+        <div class="pitem"><div class="pdot gain"></div>A structured assumption register that holds the same answer across every filing, team, and proceeding — moving from explaining capital decisions to proving them.</div>
+        <div class="pitem"><div class="pdot gain"></div>An explicit, quantified residual risk position showing what is addressed, what remains, and why — built from the same register every other response draws from.</div>
+        <div class="pitem"><div class="pdot gain"></div>Capital defense: the operating model that makes a well-defended plan possible.</div>
+      </div>
     </div>
-    <div class="ppanel" id="pp-vp">
-      <div class="pcard"><div class="ptop"><div class="pavatar" style="background:var(--p-dark)">VP</div><div><div class="pname">VP Regulatory / Executive <span class="buyer-tag">Economic Buyer</span></div><div class="prole">e.g. Tim at National Grid — translates the capital plan into the regulatory story for commissioners and boards</div></div></div>
-      <div class="pbody"><div class="pcols">
-        <div><div class="pct pain">Pain today</div>
-          <div class="pitem"><div class="pdot pain"></div>Fighting internally for capital funding before fighting externally for rate recovery. The portfolio story has to work for both audiences.</div>
-          <div class="pitem"><div class="pdot pain"></div>No structured way to demonstrate affordability or articulate residual risk in a form that survives regulatory challenge.</div>
-          <div class="pitem"><div class="pdot pain"></div>Limited visibility into total exposure across multiple jurisdictions and overlapping proceedings.</div>
-        </div>
-        <div><div class="pct gain">What this product gives them</div>
-          <div class="pitem"><div class="pdot gain"></div>A structured portfolio narrative mapped to statutory requirements, built from plan data and formatted for commissioners, CFOs, or boards.</div>
-          <div class="pitem"><div class="pdot gain"></div>An explicit, quantified residual risk position showing what is addressed, what remains, and why.</div>
-          <div class="pitem"><div class="pdot gain"></div>Affordability built into the plan from the start, not constructed after a challenge arrives.</div>
-        </div>
-      </div><div class="pquote">"When we are challenged, I need to prove the plan, not explain it. There is a big difference in a proceeding."</div></div></div>
+    <div class="pquote">"When we are challenged, I need to prove the plan, not explain it. There is a big difference in a proceeding."</div>
+    <div class="p-signal">
+      <div class="p-signal-label">Phase 1 validated — CXOs on Govern: 4.40% CTR</div>
+      <div class="p-signal-text">CXOs are 7.6% of impressions but 11.8% of clicks on Govern specifically — the clearest economic buyer signal the Phase 1 campaign produced. Lead with the multi-filing risk or consistency gap angle. Frame as explain vs. prove. Never open cold with Defend or Watch for this audience.</div>
+    </div>
+    </div></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 5. OBJECTIONS ========== -->
+<div class="section" id="objections">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Common Sales Objections</div></div>
+  <p class="sh-desc">How to handle the questions that come up in every conversation. Use these responses verbatim or adapt them.</p>
+  <div class="obj-grid" id="objGrid"></div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 6. TARGETING ========== -->
+<div class="section" id="targeting">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Target Accounts &amp; State Prioritization</div></div>
+  <p class="sh-desc">Primary focus: any utility with a rate case filing in the next two years. Use the lookup to check a specific state, or browse the priority grid below.</p>
+  <div class="intro-context"><p><strong>Targeting logic:</strong> A utility with an active or upcoming rate case has an immediate, budget-worthy need for both Watch and Defend — but the Govern message is the door opener. The consistency gap between the IRP and the rate case is the risk that lands with CXOs and legal. Lead there, then follow with the filing-specific context. NiSource and National Grid have expressed intent and should be closed as early adopters before Wave 1 GA in May 2027.</p></div>
+  <div class="sl-card">
+    <div class="sl-label">Look up a state's rate case activity</div>
+    <div class="sl-row">
+      <input class="sl-input" id="stateInput" placeholder="e.g. Indiana, California, New York..." oninput="liveFilter()"/>
+      <button class="sl-btn" onclick="lookupState()">Search</button>
+    </div>
+    <div class="sl-result" id="slResult"></div>
+  </div>
+  <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--hint);margin-bottom:12px">Priority states — active or upcoming filings within 24 months</div>
+  <div class="pgrid" id="pgrid"></div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 7. COMPETITIVE ========== -->
+<div class="section" id="competitive">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Competitive Differentiation</div></div>
+  <p class="sh-desc">How to handle "how is this different from X?" Use these frames in discovery conversations and decks.</p>
+  <div class="comp-wrap">
+    <table class="comp-table">
+      <thead><tr><th style="width:18%">Competitor</th><th style="width:22%">What they do</th><th style="width:32%">What they cannot do</th><th style="width:28%">Our wedge</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="cname">Generic AI tools</span>Copilot, ChatGPT, Gemini</td>
+          <td>Summarize regulatory documents, monitor news, generate text reports</td>
+          <td><span class="cx">No</span> — cannot produce a versioned, traced, citable assumption register. They have no knowledge of how utility capital plans are structured, how assumptions propagate through value models, or what a consistency gap looks like across filings.</td>
+          <td>A structured assumption register built on top of Copperleaf's investment data is what makes every claim traceable and every filing consistent. No LLM can replicate that — it requires the underlying structured data and domain model to exist first.</td>
+        </tr>
+        <tr>
+          <td><span class="cname">HData (partner)</span>Standalone usage</td>
+          <td>Best-in-class regulatory data: dockets, commissioner profiles, legislative tracking across 50+ PUCs</td>
+          <td><span class="cx">No</span> — no capital plan context. Surfaces the regulatory signal but cannot translate it into a consistency gap assessment or a versioned assumption register update.</td>
+          <td>HData is our data layer; we are the translation and governance layer. HData tells you what changed. We tell you what that means for your filed assumptions — and update the register accordingly.</td>
+        </tr>
+        <tr>
+          <td><span class="cname">Anaplan / Palantir</span>Broad finance and planning</td>
+          <td>Enterprise planning, financial modeling, broad analytics</td>
+          <td><span class="cx">No</span> — no domain model for utility capital planning. Cannot produce a jurisdiction-specific, versioned assumption register that holds up under regulatory cross-examination.</td>
+          <td>This problem is too narrow for them to pursue and too deep to approximate. The domain expertise required to build a defensible assumption register for regulated utilities is what we have and they do not.</td>
+        </tr>
+        <tr>
+          <td><span class="cname">Manual process</span>Status quo</td>
+          <td>Dozens of engineers coordinating manually across disconnected systems, rebuilding evidence under proceeding pressure</td>
+          <td><span class="cx">No</span> — produces inconsistent narratives across filings. Scales with headcount. The consistency gap is a direct product of having no structured register.</td>
+          <td>A structured assumption register replaces manual reconstruction with a versioned, citable evidence base — built once, cited always, consistent across every filing and proceeding.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 8. CAMPAIGN RESULTS ========== -->
+<div class="section" id="campaign">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Phase 1 Campaign Results</div></div>
+  <p class="sh-desc">Six-ad ABM test across 20 target utility accounts, ~7,600 reachable contacts. Three message themes tested as the only variable. Account targeting, budget per theme, and CTA held constant.</p>
+
+  <div style="background:var(--navy);border-radius:14px;padding:28px 32px;margin-bottom:16px;position:relative;overflow:hidden">
+    <div style="position:absolute;right:-30px;top:-30px;width:200px;height:200px;background:radial-gradient(circle,rgba(123,47,190,0.35) 0%,transparent 65%);pointer-events:none"></div>
+    <div style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--p-light);margin-bottom:20px">Top-line performance</div>
+    <div class="cstat-grid">
+      <div class="cstat"><div class="cstat-n">2.17%</div><div class="cstat-l">Blended CTR — 3.6× LinkedIn average (0.6%) and ~2× our usual norm (1.1%)</div></div>
+      <div class="cstat"><div class="cstat-n">840</div><div class="cstat-l">Total clicks — 1.7× target, hit in 8 days vs. 2–3 week projection</div></div>
+      <div class="cstat"><div class="cstat-n">68%</div><div class="cstat-l">Share of all clicks delivered by Govern theme alone</div></div>
+      <div class="cstat"><div class="cstat-n">7.03%</div><div class="cstat-l">CTR for Managing Counsel — single highest-performing title in the campaign</div></div>
     </div>
   </div>
 
-  <hr class="divider">
-
-  <!-- 5. OBJECTIONS -->
-  <div class="section" id="objections">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Common Sales Objections</div></div>
-    <p class="sh-desc">How to handle the questions that come up in every conversation. Use these responses verbatim or adapt them.</p>
-    <div class="obj-grid" id="objGrid"></div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- 6. TARGETING -->
-  <div class="section" id="targeting">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Target Accounts &amp; State Prioritization</div></div>
-    <p class="sh-desc">Primary focus: any utility with a rate case filing in the next two years. Use the lookup to check a specific state, or browse the priority grid below.</p>
-    <div class="intro-context"><p><strong>Targeting logic:</strong> A utility with an active or upcoming rate case has an immediate, budget-worthy need for both Watch and Defend. The closer the filing window, the stronger the urgency. NiSource and National Grid have expressed intent and should be closed as early adopters before Wave 1 GA in May 2027.</p></div>
-    <div class="sl-card">
-      <div class="sl-label">Look up a state's rate case activity</div>
-      <div class="sl-row">
-        <input class="sl-input" id="stateInput" placeholder="e.g. Indiana, California, New York..." oninput="liveFilter()"/>
-        <button class="sl-btn" onclick="lookupState()">Search</button>
-      </div>
-      <div class="sl-result" id="slResult"></div>
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px">
+    <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:16px">Theme performance breakdown</div>
+    <div class="theme-bar govern">
+      <div class="theme-num"><div class="theme-num-val govern">3.38%</div><div class="theme-num-label govern">Govern</div></div>
+      <div class="theme-track"><div class="theme-track-bar"><div class="theme-track-fill" style="width:100%;background:var(--p)"></div></div><div class="theme-track-text">68% of all clicks. <strong style="color:var(--navy)">Lead with this — always.</strong> CXOs engaged at 4.40%, legal roles at 7.03%+. Phase 1's clearest signal.</div></div>
     </div>
-    <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--hint);margin-bottom:12px">Priority states — active or upcoming filings within 24 months</div>
-    <div class="pgrid" id="pgrid"></div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- 7. COMPETITIVE -->
-  <div class="section" id="competitive">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Competitive Differentiation</div></div>
-    <p class="sh-desc">How to handle "how is this different from X?" Use these frames in discovery conversations and decks.</p>
-    <div class="comp-wrap">
-      <table class="comp-table">
-        <thead><tr><th style="width:18%">Competitor</th><th style="width:22%">What they do</th><th style="width:32%">What they cannot do</th><th style="width:28%">Our wedge</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><span class="cname">Generic AI tools</span>Copilot, ChatGPT, Gemini</td>
-            <td>Summarize regulatory documents, monitor news, generate text reports</td>
-            <td><span class="cx">No</span> — cannot translate a regulatory event into capital plan impact. No knowledge of how utility capital plans are structured or how assumptions flow through value models.</td>
-            <td>For investments optimized through Copperleaf, we know the value drivers, assumptions, and trade-offs. A generic LLM cannot tell you what a ruling means for those specific investments.</td>
-          </tr>
-          <tr>
-            <td><span class="cname">HData (partner)</span>Standalone usage</td>
-            <td>Best-in-class regulatory data: dockets, commissioner profiles, legislative tracking across 50+ PUCs</td>
-            <td><span class="cx">No</span> — no capital plan context. Surfaces the signal but cannot translate it into investment exposure or evidence for specific projects.</td>
-            <td>HData is our data layer; we are the translation layer. HData shows you the ruling. We show you which investments are exposed and help build the evidence to defend them.</td>
-          </tr>
-          <tr>
-            <td><span class="cname">Anaplan / Palantir</span>Broad finance and planning</td>
-            <td>Enterprise planning, financial modeling, broad analytics</td>
-            <td><span class="cx">No</span> — no domain model for utility capital planning. Lack the benefit-cost threshold logic, TDSIC mechanics, and jurisdiction-specific cost recovery frameworks.</td>
-            <td>This problem is too narrow for them to pursue and too deep to approximate. The domain translation gap is precisely where we operate.</td>
-          </tr>
-          <tr>
-            <td><span class="cname">Manual process</span>Status quo</td>
-            <td>Dozens of engineers and staff coordinating manually across disconnected systems under proceeding pressure</td>
-            <td><span class="cx">No</span> — slow, inconsistent, scales with headcount. One error opens new discovery lines.</td>
-            <td>For the investments that run through Copperleaf, evidence is faster to produce, consistently structured, and auditable.</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="theme-bar watch">
+      <div class="theme-num"><div class="theme-num-val watch">1.75%</div><div class="theme-num-label watch">Watch</div></div>
+      <div class="theme-track"><div class="theme-track-bar"><div class="theme-track-fill" style="width:52%;background:var(--navy-mid)"></div></div><div class="theme-track-text">Signal monitoring and exposure translation. Best deployed selectively for accounts with a known, named regulatory event — not as a cold opener.</div></div>
+    </div>
+    <div class="theme-bar defend">
+      <div class="theme-num"><div class="theme-num-val defend">1.25%</div><div class="theme-num-label defend">Defend</div></div>
+      <div class="theme-track"><div class="theme-track-bar"><div class="theme-track-fill" style="width:37%;background:#0057B0"></div></div><div class="theme-track-text">Filing prep and discovery response. Do not lead cold outreach here — reads as a narrow IT problem when delivered cold. Use as a proof point downstream of Govern.</div></div>
     </div>
   </div>
 
-  <hr class="divider">
-
-  <!-- 8. EMAIL TEMPLATES -->
-  <div class="section" id="email">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Email Templates</div></div>
-    <p class="sh-desc">Select a state, persona, and account warmth to generate a ready-to-copy outreach email. Subject line and body auto-populate based on the filing context.</p>
-
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:0 1px 4px rgba(123,47,190,0.04)">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
-        <div>
-          <div class="email-ctrl-label">State / Account</div>
-          <select id="emailState" onchange="generateEmail()" class="email-select">
-            <option value="">Select a state...</option>
-            <option value="indiana">Indiana</option>
-            <option value="new york">New York</option>
-            <option value="california">California</option>
-            <option value="minnesota">Minnesota</option>
-            <option value="illinois">Illinois</option>
-            <option value="michigan">Michigan</option>
-            <option value="north carolina">North Carolina</option>
-            <option value="ohio">Ohio</option>
-            <option value="colorado">Colorado</option>
-            <option value="pennsylvania">Pennsylvania</option>
-            <option value="oregon">Oregon</option>
-            <option value="maryland">Maryland</option>
-            <option value="hawaii">Hawaii</option>
-          </select>
-        </div>
-        <div>
-          <div class="email-ctrl-label">Persona</div>
-          <select id="emailPersona" onchange="generateEmail()" class="email-select">
-            <option value="vp">VP Regulatory / Executive</option>
-            <option value="reg-lead">Regulatory Strategy Lead</option>
-            <option value="cap-mgr">Capital Planning Manager</option>
-            <option value="engineer">Engineer / Project Owner</option>
-            <option value="attorney">Regulatory Affairs Attorney</option>
-          </select>
-        </div>
-      </div>
-      <div style="margin-bottom:24px">
-        <div class="email-ctrl-label">Account warmth</div>
-        <div style="display:flex;align-items:center;gap:12px">
-          <span style="font-size:12px;font-weight:600;color:var(--hint)">Cold</span>
-          <input type="range" min="0" max="2" step="1" value="0" id="warmthSlider" oninput="updateWarmth();generateEmail()" style="flex:1">
-          <span style="font-size:12px;font-weight:600;color:var(--hint)">Hot</span>
-        </div>
-        <div class="warmth-labels">
-          <span id="wl0" class="warmth-label active">Cold — no prior contact</span>
-          <span id="wl1" class="warmth-label">Warm — prior touchpoint</span>
-          <span id="wl2" class="warmth-label">Hot — active conversation</span>
-        </div>
-      </div>
-      <div id="emailOutput" style="display:none">
-        <div style="margin-bottom:12px">
-          <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--hint);margin-bottom:6px">Subject line</div>
-          <div class="email-subj-wrap">
-            <div id="emailSubject" class="email-subj"></div>
-            <button class="copy-btn" onclick="copyText('emailSubject',this)">Copy</button>
-          </div>
-        </div>
-        <div>
-          <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--hint);margin-bottom:6px">Email body</div>
-          <div class="email-body-wrap">
-            <div id="emailBody" class="email-body"></div>
-            <button class="copy-btn-abs" onclick="copyText('emailBody',this)">Copy</button>
-          </div>
-        </div>
-        <div id="emailNote" class="email-note"></div>
-      </div>
-      <div id="emailPlaceholder" style="text-align:center;padding:32px;color:var(--hint);font-size:14px">Select a state above to generate an email.</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px">
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px">
+      <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:14px">Economic buyer signal — CXO tier</div>
+      <div style="font-size:28px;font-weight:800;color:var(--navy);margin-bottom:4px">4.40%</div>
+      <div style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px">CXO CTR on Govern — highest of any seniority tier, +27% lift over their full-campaign rate. CXOs are 7.6% of impressions but 11.8% of clicks on Govern specifically.</div>
+      <div style="background:var(--p-pale);border-left:3px solid var(--p);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13px;color:var(--p-dark);font-weight:600">This is the clearest economic buyer signal the campaign produced. Protect it.</div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px">
+      <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:14px">Top-performing titles on Govern</div>
+      <div class="title-row"><span style="font-size:13px;font-weight:600;color:var(--navy)">Managing Counsel</span><span style="font-size:14px;font-weight:800;color:var(--p)">7.03%</span></div>
+      <div class="title-row"><span style="font-size:13px;font-weight:600;color:var(--navy)">Principal</span><span style="font-size:14px;font-weight:800;color:var(--p)">4.72%</span></div>
+      <div class="title-row"><span style="font-size:13px;font-weight:600;color:var(--navy)">CXO (Govern)</span><span style="font-size:14px;font-weight:800;color:var(--p)">4.40%</span></div>
+      <div class="title-row"><span style="font-size:13px;font-weight:600;color:var(--navy)">Chairperson</span><span style="font-size:14px;font-weight:800;color:var(--p)">3.49%</span></div>
+      <div style="margin-top:10px;font-size:12px;color:var(--hint);font-style:italic">Legal-adjacent roles consistently over-index on Govern. Prioritize Managing Counsel and VP Regulatory in all sequences.</div>
     </div>
   </div>
+
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px">
+    <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:14px">Top engaged accounts</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+      <div class="account-card"><div class="account-card-name">Hydro Québec</div><div class="account-card-detail">146 clicks · 2.66% CTR</div></div>
+      <div class="account-card"><div class="account-card-name">Ameren</div><div class="account-card-detail">118 clicks</div></div>
+      <div class="account-card"><div class="account-card-name">National Grid</div><div class="account-card-detail">93 clicks</div></div>
+      <div class="account-card"><div class="account-card-name">Portland General Electric</div><div class="account-card-detail">79 clicks · 3.78% CTR — efficiency leader</div></div>
+      <div class="account-card"><div class="account-card-name">Consumers Energy</div><div class="account-card-detail">79 clicks</div></div>
+      <div class="account-card"><div class="account-card-name">AEP</div><div class="account-card-detail">72 clicks</div></div>
+      <div class="account-card"><div class="account-card-name">Alabama Power</div><div class="account-card-detail">3.45% CTR</div></div>
+      <div class="account-card"><div class="account-card-name">PacifiCorp</div><div class="account-card-detail">2.54% CTR</div></div>
+      <div class="account-card"><div class="account-card-name">OGE</div><div class="account-card-detail">2.20% CTR</div></div>
+    </div>
+  </div>
+
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px">
+    <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--p);margin-bottom:6px">Validated Govern angles by context</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:16px;line-height:1.6">Govern is not a product feature — it is a claim about how the regulatory environment has changed. Rate cases used to reward a well-constructed plan. They now reward a well-defended one. Pick the angle that matches the recipient's situation.</p>
+    <div class="govern-angle"><div class="govern-angle-label">Consistency gap — multi-jurisdiction filers / CXO</div><div class="govern-angle-quote">"Two filings. Two sets of assumptions. One intervenor who noticed the difference."</div><div class="govern-angle-desc">The gap between the IRP, the rate case, and the discovery response is now a disallowance risk, not a documentation issue.</div></div>
+    <div class="govern-angle"><div class="govern-angle-label">Frozen record — accounts with active or reopened dockets</div><div class="govern-angle-quote">"Your plan keeps evolving. The filed record is frozen. Challengers will ask."</div><div class="govern-angle-desc">The gap between what was filed and what the utility currently believes is where disallowance risk lives.</div></div>
+    <div class="govern-angle"><div class="govern-angle-label">Multi-filing risk — CXO / VP Regulatory</div><div class="govern-angle-quote">"IRP assumptions don't match the rate case? That's not a documentation problem — it's a disallowance risk."</div><div class="govern-angle-desc">Economic stakes framing for senior buyers who own the regulatory outcome, not just the process.</div></div>
+    <div class="govern-angle"><div class="govern-angle-label">Engineer burden — engineering / operations buyers</div><div class="govern-angle-quote">"Engineers spend months writing project justifications from scratch every filing cycle."</div><div class="govern-angle-desc">From data already in Copperleaf. No structured output. No citable trail. Repeated every cycle.</div></div>
+    <div class="govern-angle" style="margin-bottom:0"><div class="govern-angle-label">Audit directive — accounts with recent audit or reliability directive</div><div class="govern-angle-quote">"67 audit observations. 75 recommendations. Your next IRP will be judged against every single one."</div><div class="govern-angle-desc">High-specificity angle for accounts under formal regulatory scrutiny. Use when a specific audit or directive is known.</div></div>
+    <div style="margin-top:16px;padding:14px 16px;background:var(--navy);border-radius:8px">
+      <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:6px">Explain vs. prove — the defining distinction</div>
+      <div style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.65">Explaining is narrative. Proving is cited evidence with a versioned trail. This single distinction is what all Govern messaging is built on. Use it when you need one sentence that captures the entire shift.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ========== 9. EMAIL TEMPLATES ========== -->
+<div class="section" id="email">
+  <div class="sh"><div class="sh-bar"></div><div class="sh-title">Email Templates</div></div>
+  <p class="sh-desc">Select a state, persona, and account warmth to generate a ready-to-copy outreach email. Cold emails lead with Govern — the consistency gap and frozen record angles validated in Phase 1. Defend and Watch urgency appear in warm and hot tiers.</p>
+
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
+      <div><div class="email-ctrl-label">State / Account</div>
+        <select id="emailState" onchange="generateEmail()" class="email-select">
+          <option value="">Select a state...</option>
+          <option value="indiana">Indiana</option>
+          <option value="new york">New York</option>
+          <option value="california">California</option>
+          <option value="minnesota">Minnesota</option>
+          <option value="illinois">Illinois</option>
+          <option value="michigan">Michigan</option>
+          <option value="north carolina">North Carolina</option>
+          <option value="ohio">Ohio</option>
+          <option value="colorado">Colorado</option>
+          <option value="pennsylvania">Pennsylvania</option>
+          <option value="oregon">Oregon</option>
+          <option value="maryland">Maryland</option>
+          <option value="hawaii">Hawaii</option>
+        </select>
+      </div>
+      <div><div class="email-ctrl-label">Persona</div>
+        <select id="emailPersona" onchange="generateEmail()" class="email-select">
+          <option value="vp">VP Regulatory / Executive</option>
+          <option value="reg-lead">Regulatory Strategy Lead</option>
+          <option value="cap-mgr">Capital Planning Manager</option>
+          <option value="engineer">Engineer / Project Owner</option>
+          <option value="attorney">Regulatory Affairs Attorney</option>
+        </select>
+      </div>
+    </div>
+    <div style="margin-bottom:24px">
+      <div class="email-ctrl-label">Account warmth</div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:12px;font-weight:600;color:var(--hint)">Cold</span>
+        <input type="range" min="0" max="2" step="1" value="0" id="warmthSlider" oninput="updateWarmth();generateEmail()" style="flex:1">
+        <span style="font-size:12px;font-weight:600;color:var(--hint)">Hot</span>
+      </div>
+      <div class="warmth-labels">
+        <span id="wl0" class="warmth-label active">Cold — Govern-led, no prior contact</span>
+        <span id="wl1" class="warmth-label">Warm — prior touchpoint</span>
+        <span id="wl2" class="warmth-label">Hot — active conversation</span>
+      </div>
+    </div>
+    <div id="emailOutput" style="display:none">
+      <div style="margin-bottom:12px">
+        <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--hint);margin-bottom:6px">Subject line</div>
+        <div class="email-subj-wrap"><div id="emailSubject" class="email-subj"></div><button class="copy-btn" onclick="copyText('emailSubject',this)">Copy</button></div>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--hint);margin-bottom:6px">Email body</div>
+        <div class="email-body-wrap"><div id="emailBody" class="email-body"></div><button class="copy-btn-abs" onclick="copyText('emailBody',this)">Copy</button></div>
+      </div>
+      <div id="emailNote" class="email-note"></div>
+    </div>
+    <div id="emailPlaceholder" style="text-align:center;padding:32px;color:var(--hint);font-size:14px">Select a state above to generate an email.</div>
+  </div>
+</div>
 
 </div><!-- end .main -->
 
@@ -650,57 +794,66 @@ renderQuote();
 setInterval(nextQuote,7000);
 
 var objections=[
-  {q:"Isn't this just an AI document tool?",a:"No. Generic AI can summarize a regulatory document. It cannot tell you what that document means for your specific investments, because it has no visibility into how those investments are valued or what assumptions drive them. For the capital that runs through Copperleaf, that translation is what the product does."},
-  {q:"We already use HData. Why do we need this?",a:"HData surfaces the regulatory signal. Regulatory Intelligence tells you what that signal means for the specific investments Copperleaf has optimized for you. HData shows you the ruling. We show you which of your projects are exposed, by how much, and help you build the evidence to respond."},
-  {q:"Can we just build this internally?",a:"You could build a monitoring feed. You cannot replicate the structured investment data and value model context that makes the translation meaningful. That data exists in Copperleaf for the investments we optimize. No internal build can shortcut that for the same scope."},
-  {q:"Our legal team will never trust AI-generated responses.",a:"The system does not generate responses for attorneys to rubber-stamp. It generates cited first drafts anchored to the filed record for the investments in scope, which attorneys then review and approve. Nothing enters the proceeding record without explicit sign-off. That is a hard system gate, not a suggestion."},
-  {q:"This seems like a feature of Copperleaf Portfolio, not a new product.",a:"Portfolio handles investment optimization. Regulatory Intelligence handles what happens after: monitoring signals that affect the optimized plan, building cited evidence for filing, and supporting responses to discovery challenge. These are distinct workflows with distinct buyers."},
-  {q:"What happens if the AI gets something wrong?",a:"The system only cites what exists in the filed record for the investments in scope. If a question cannot be answered from that record, it flags rather than infers. Citation accuracy is tracked as a core product metric with a target of 95% confirmed accuracy."},
-  {q:"$250K seems expensive for a module.",a:"The IR Accelerator alone saves 3 to 5 days per discovery request across a 10-week proceeding window. At typical regulatory team rates, one proceeding cycle more than covers the ACV. That is before quantifying the value of avoided capital disallowances on the investments we help defend."},
-  {q:"How do you handle different rules in different states?",a:"The Jurisdictional Configuration Engine holds jurisdiction-specific profiles: statutory pillars, benefit-cost thresholds, filing calendars, exhibit formats, and commissioner composition. Every output is filtered through the relevant profile. Configuration is validated with design partners before launch."}
+  {q:"Isn't this just an AI document tool?",a:"Generic AI can summarize a regulatory document. It cannot produce a versioned, traced, citable assumption register — because it has no knowledge of how the investments were valued, what assumptions drove them, or what a consistency gap looks like across filings. The register is built on Copperleaf's structured investment data. That's what makes every claim traceable."},
+  {q:"We already use HData. Why do we need this?",a:"HData surfaces the regulatory signal. Regulatory Intelligence tells you what that signal means for the specific assumptions already in your filed record — and updates the structured register accordingly. HData shows you the ruling. We show you which filed assumptions are now inconsistent and help you close the gap before a challenger finds it."},
+  {q:"We could build this internally.",a:"You can build a monitoring feed. You cannot replicate the structured investment data and value-model context that makes the assumption register meaningful. That data exists in Copperleaf for the investments we optimize. No internal build can produce a versioned, cited, traceable register from scratch for the same scope."},
+  {q:"Our legal team will never trust AI-generated responses.",a:"The system generates cited first drafts anchored to the structured assumption register — every claim traces to a specific source field and data record. Attorneys review and approve. Nothing enters the proceeding record without explicit sign-off. That is a hard system gate, not a suggestion."},
+  {q:"This sounds like a feature of Copperleaf Portfolio.",a:"Portfolio handles investment optimization. Regulatory Intelligence handles what happens after: maintaining the structured assumption register, monitoring for consistency gaps when signals arrive, building cited evidence for filing, and supporting discovery response. These are distinct workflows — and they only work because the investment data already exists in Portfolio."},
+  {q:"What if we already have a documentation process?",a:"Documentation is not a register. The consistency gap doesn't come from having no documents — it comes from having documents that aren't versioned, traced, or cited in a way that holds up when an intervenor cross-references your IRP against your rate case against your discovery response. A structured assumption register closes that gap structurally."},
+  {q:"What happens if the AI gets something wrong?",a:"The system only cites what exists in the structured register for the investments in scope. If a question cannot be answered from that register, it flags rather than infers. Citation accuracy is a core product metric — target 95% confirmed accuracy. Any unsupported claim halts the workflow before attorney review."},
+  {q:"$250K seems expensive for a module.",a:"The IR Accelerator alone saves 3 to 5 days per discovery request. At typical regulatory team rates, one proceeding cycle more than covers the ACV — before accounting for the value of disallowances avoided because the assumption register held up under cross-examination."}
 ];
 var og=document.getElementById('objGrid');
 objections.forEach(function(o){og.innerHTML+='<div class="obj-card"><div class="obj-q">'+o.q+'</div><div class="obj-a">'+o.a+'</div></div>';});
 
 var stateData={
-  "indiana":{label:"Indiana",heat:"hot",utility:"NiSource / NIPSCO",window:"2026",urgency:"NiSource's gas TDSIC program is under active OUCC scrutiny and Duke's TDSIC 3.0 cycle is approaching with a harder evidence bar following the Commission's methodology ruling. Indiana has seen firsthand what happens when the evidence base doesn't hold — a single proceeding cost one utility $41M in disallowed recovery.",hook:"Indiana's regulatory environment is one of the most active and contested in the country right now.",cases:[{u:"NiSource / NIPSCO",t:"Gas TDSIC (26B)",s:"Active, under OUCC scrutiny",w:"2026"},{u:"Duke Energy Indiana",t:"TDSIC 3.0 filing cycle",s:"Upcoming",w:"2026–2027"}],ctx:"High priority. Multiple overlapping TDSIC proceedings. OUCC challenge posture is a persistent capital plan risk."},
-  "new york":{label:"New York",heat:"hot",utility:"National Grid",window:"2026–2027",urgency:"National Grid is navigating a multi-year rate case cadence under CLCPA compliance pressure — a large, complex capital program that needs to be justified project by project to a commission with 150+ participating parties.",hook:"New York's CLCPA compliance requirements mean National Grid is defending an unusually large and scrutinized capital program.",cases:[{u:"National Grid",t:"CLCPA compliance rate case",s:"Multi-year cadence, labs pre-engagement complete",w:"2026–2027"},{u:"Con Edison",t:"Multi-year rate plan",s:"NY PSC active",w:"2026"}],ctx:"High priority. CLCPA mandates drive large capital programs under active regulatory scrutiny."},
-  "california":{label:"California",heat:"hot",utility:"Southern California Edison",window:"2026–2027",urgency:"SCE is managing a $28B wildfire-driven capital restructuring through an active CPUC proceeding. The evidence bar in California is among the highest in the country — proceedings regularly involve 150+ parties with full discovery rights.",hook:"Southern California Edison is defending one of the largest capital restructuring programs in US utility history.",cases:[{u:"Southern California Edison",t:"$28B wildfire-driven capital restructuring",s:"Active CPUC proceedings",w:"2026–2027"},{u:"PG&E",t:"General rate case",s:"CPUC review ongoing",w:"2026"}],ctx:"High priority. SCE's wildfire restructuring is one of the largest programs under active scrutiny in the country."},
-  "minnesota":{label:"Minnesota",heat:"hot",utility:"Xcel Energy",window:"2026",urgency:"Xcel's $491M electric rate case is active with escalating intervenor opposition. The more parties pushing back, the more critical it becomes to have a consistent, cited, and auditable evidence base across every project in the filing.",hook:"Xcel's $491M Minnesota rate case is drawing escalating intervenor opposition — exactly the environment where evidence quality determines outcomes.",cases:[{u:"Xcel Energy (NSP)",t:"$491M electric rate case",s:"Active, escalating intervenor opposition",w:"Decision 2026"},{u:"Otter Tail Power",t:"Electric rate increase",s:"Active, interim rates Jan 2026",w:"Final decision early 2027"}],ctx:"High priority. Xcel's large filing with escalating intervenor opposition is a compelling use case."},
-  "illinois":{label:"Illinois",heat:"hot",utility:"Ameren Illinois",window:"Ongoing through 2026+",urgency:"Ameren Illinois is managing four simultaneous ICC adverse orders on appeal while $31.8B in committed capital sits in an unresolved recovery regime. No single tool is currently tracking all four threads together.",hook:"Ameren Illinois is managing four simultaneous ICC adverse orders while billions in committed capital sit in an unresolved recovery regime.",cases:[{u:"Ameren Illinois",t:"Capital recovery — multiple ICC orders",s:"Four simultaneous appeals, $31.8B committed capital",w:"Ongoing 2026+"},{u:"ComEd",t:"Multi-year plan",s:"ICC proceedings active",w:"2026"}],ctx:"High priority. Most complex multi-docket situation in the country."},
-  "michigan":{label:"Michigan",heat:"warm",utility:"DTE Energy",window:"2026",urgency:"DTE is in its fourth rate case in five years with a $574M filing, and Consumers Energy operates on a 91-day re-filing cadence. Both are already HData customers — the translation layer is what's missing.",hook:"DTE Energy is in its fourth rate case in five years. At that pace, the evidence assembly burden alone is a serious operational drag.",cases:[{u:"Consumers Energy",t:"Overlapping Michigan proceedings",s:"91-day re-filing cadence, HData customer",w:"2026"},{u:"DTE Energy",t:"Fourth rate case in five years, $574M filing",s:"Active, HData customer",w:"2026"}],ctx:"Strong pipeline. Both are HData customers, creating a natural co-sell motion."},
-  "north carolina":{label:"North Carolina",heat:"warm",utility:"Duke Energy Carolinas",window:"2026",urgency:"Duke Energy is active in both Indiana and the Carolinas — a cross-jurisdictional scope that multiplies the complexity of maintaining a consistent evidence base across concurrent proceedings.",hook:"Duke Energy is managing concurrent proceedings across multiple jurisdictions — evidence consistency across all of them is a real operational challenge.",cases:[{u:"Duke Energy Carolinas",t:"Electric rate case",s:"NCUC active hearing",w:"2026"},{u:"Duke Energy Progress",t:"Rate adjustment",s:"Public witness hearings March 2026",w:"2026"}],ctx:"Duke is already a workshop participant."},
-  "ohio":{label:"Ohio",heat:"warm",utility:"AEP Ohio",window:"2026–2027",urgency:"Both AEP Ohio and FirstEnergy have active PUCO proceedings. Capital investment scrutiny in Ohio has been increasing and teams need a faster, more structured way to build and defend their filings.",hook:"Ohio's PUCO is actively scrutinizing capital investment programs at multiple utilities simultaneously.",cases:[{u:"AEP Ohio",t:"Distribution investment plan",s:"PUCO proceeding active",w:"2026–2027"},{u:"FirstEnergy",t:"Electric distribution rate case",s:"PUCO review",w:"2026"}],ctx:"Active PUCO proceedings with capital investment scrutiny."},
-  "colorado":{label:"Colorado",heat:"warm",utility:"Atmos Energy",window:"2026",urgency:"Atmos Energy has an active gas rate increase before the Colorado PUC with a public hearing in April 2026. The window to strengthen the evidence base before discovery opens is narrow.",hook:"Atmos Energy is in an active rate proceeding before the Colorado PUC — the discovery window opens soon.",cases:[{u:"Atmos Energy",t:"Gas rate increase",s:"Active, public comment hearing April 2026",w:"2026"},{u:"Xcel Energy (PSCo)",t:"IRP and rate proceedings",s:"Colorado PUC active",w:"2026"}],ctx:"Colorado PUC is actively reviewing multiple large proceedings."},
-  "pennsylvania":{label:"Pennsylvania",heat:"warm",utility:"PPL / PECO",window:"2026–2027",urgency:"PA American Water's rate case has a PUC decision due in August 2026. PPL and PECO have active proceedings running in parallel with multiple intervenors.",hook:"PA American Water's rate case decision is due in August — the team is in the heart of the evidence defense window right now.",cases:[{u:"PA American Water",t:"Rate increase application",s:"Active, PUC decision due August 2026",w:"Aug 2026"},{u:"PECO / PPL",t:"Distribution rate proceedings",s:"PA PUC active",w:"2026–2027"}],ctx:"Multiple active proceedings at PA PUC."},
-  "oregon":{label:"Oregon",heat:"warm",utility:"PacifiCorp",window:"2026",urgency:"PacifiCorp filed its rate case in November 2025 and is in an active OPUC docket. Its multi-state exposure makes consistent evidence management especially challenging.",hook:"PacifiCorp's rate filing is active at the Oregon PUC — and its multi-state exposure makes consistent evidence management particularly complex.",cases:[{u:"PacifiCorp",t:"Rate filing and CPCN filings",s:"Filed November 2025, active OPUC docket",w:"2026"},{u:"Portland General Electric",t:"Power cost variance docket",s:"Active",w:"Ongoing"}],ctx:"OPUC is managing multiple active proceedings."},
-  "maryland":{label:"Maryland",heat:"warm",utility:"Pepco",window:"2026",urgency:"Pepco filed its rate increase application in October 2025 and is in active proceedings at the MD PSC. BGE's multi-year plan adds further complexity to the docket.",hook:"Pepco filed its rate case just months ago — the evidence base for discovery is being built right now.",cases:[{u:"Pepco",t:"Rate increase application",s:"Filed October 2025, active",w:"2026"},{u:"BGE",t:"Multi-year plan",s:"MD PSC proceeding",w:"2026"}],ctx:"Multiple active proceedings at MD PSC."},
-  "hawaii":{label:"Hawaii",heat:"medium",utility:"Hawaiian Electric",window:"Active",urgency:"Hawaiian Electric's Waiau Repowering Project was approved in March 2026 with strict cost controls. Ongoing compliance and clean energy mandates mean the regulatory relationship is far from settled.",hook:"Hawaiian Electric's recent approval came with strict cost controls — ongoing compliance means regulatory scrutiny doesn't stop at approval.",cases:[{u:"Hawaiian Electric",t:"Waiau Repowering Project",s:"Approved March 2026 with cost controls",w:"Active"},{u:"HECO",t:"Clean energy transition filings",s:"PUC active docket",w:"2026+"}],ctx:"Active PUC with clean energy mandates."}
+  "indiana":{label:"Indiana",heat:"hot",utility:"NiSource / NIPSCO",window:"2026",urgency:"NiSource's gas TDSIC is under active OUCC scrutiny and Duke's TDSIC 3.0 cycle is approaching with a harder evidence bar. The consistency between value model methodology in past filings and what appears in the next proceeding is exactly what the OUCC will test.",hook:"Indiana's OUCC has been systematically challenging value model methodology across TDSIC proceedings — the consistency gap between filings is the specific risk.",cases:[{u:"NiSource / NIPSCO",t:"Gas TDSIC (26B)",s:"Active, under OUCC scrutiny",w:"2026"},{u:"Duke Energy Indiana",t:"TDSIC 3.0 filing cycle",s:"Upcoming",w:"2026–2027"}],ctx:"High priority. Multiple overlapping TDSIC proceedings. OUCC challenge posture targets assumption consistency directly."},
+  "new york":{label:"New York",heat:"hot",utility:"National Grid",window:"2026–2027",urgency:"National Grid is navigating a multi-year rate case cadence under CLCPA compliance pressure. With 150+ parties in a New York proceeding, every inconsistency between the IRP and the rate case is a discovery target.",hook:"New York proceedings involve 150+ parties with full discovery rights — every assumption inconsistency across filings is a target.",cases:[{u:"National Grid",t:"CLCPA compliance rate case",s:"Multi-year cadence, labs pre-engagement complete",w:"2026–2027"},{u:"Con Edison",t:"Multi-year rate plan",s:"NY PSC active",w:"2026"}],ctx:"High priority. CLCPA mandates drive large capital programs under active, multi-party scrutiny."},
+  "california":{label:"California",heat:"hot",utility:"Southern California Edison",window:"2026–2027",urgency:"SCE is managing a $28B wildfire-driven capital restructuring. California proceedings regularly involve 150+ parties — the consistency gap between the IRP, the rate case, and discovery responses is systematically exploited.",hook:"California proceedings involve 150+ parties. The consistency gap between filings is the most common path to disallowance at the CPUC.",cases:[{u:"Southern California Edison",t:"$28B wildfire capital restructuring",s:"Active CPUC proceedings",w:"2026–2027"},{u:"PG&E",t:"General rate case",s:"CPUC review ongoing",w:"2026"}],ctx:"High priority. The California regulatory environment is among the most adversarial in the country."},
+  "minnesota":{label:"Minnesota",heat:"hot",utility:"Xcel Energy",window:"2026",urgency:"Xcel's $491M rate case has escalating intervenor opposition. As more parties engage, the consistency between Xcel's IRP assumptions and its rate case assumptions becomes an increasingly specific discovery target.",hook:"Escalating intervenor opposition means Xcel's assumption consistency across filings will be under sustained scrutiny.",cases:[{u:"Xcel Energy (NSP)",t:"$491M electric rate case",s:"Active, escalating intervenor opposition",w:"Decision 2026"},{u:"Otter Tail Power",t:"Electric rate increase",s:"Active",w:"Early 2027"}],ctx:"High priority. Escalating opposition targets assumption consistency directly."},
+  "illinois":{label:"Illinois",heat:"hot",utility:"Ameren Illinois",window:"Ongoing",urgency:"Ameren Illinois is managing four simultaneous ICC adverse orders while $31.8B in committed capital sits in an unresolved recovery regime. The consistency gap between what was filed across four proceedings and what the plan currently says is compounding with every ruling.",hook:"Four simultaneous ICC proceedings mean Ameren's assumption consistency across filings is under pressure from multiple directions simultaneously.",cases:[{u:"Ameren Illinois",t:"Capital recovery — multiple ICC orders",s:"Four simultaneous appeals, $31.8B committed capital",w:"Ongoing 2026+"},{u:"ComEd",t:"Multi-year plan",s:"ICC proceedings active",w:"2026"}],ctx:"High priority. Most complex multi-docket consistency challenge in the country."},
+  "michigan":{label:"Michigan",heat:"warm",utility:"DTE Energy",window:"2026",urgency:"DTE is in its fourth rate case in five years. At that cadence, the consistency between assumptions across successive filings — and between the current filing and discovery responses from prior proceedings — is a compounding risk.",hook:"Four rate cases in five years means DTE's assumption consistency across successive filings is under sustained scrutiny.",cases:[{u:"Consumers Energy",t:"Overlapping Michigan proceedings",s:"91-day re-filing cadence, HData customer",w:"2026"},{u:"DTE Energy",t:"Fourth rate case in five years, $574M filing",s:"Active, HData customer",w:"2026"}],ctx:"Strong pipeline. High-frequency filing cadence creates compounding consistency risk."},
+  "north carolina":{label:"North Carolina",heat:"warm",utility:"Duke Energy Carolinas",window:"2026",urgency:"Duke is managing concurrent proceedings in Indiana and the Carolinas. Cross-jurisdictional filings multiply the consistency gap risk — what the Indiana filing says and what the Carolina filing says will be cross-referenced.",hook:"Duke's cross-jurisdictional scope means assumption consistency across Indiana and Carolina filings is a specific discovery risk.",cases:[{u:"Duke Energy Carolinas",t:"Electric rate case",s:"NCUC active hearing",w:"2026"},{u:"Duke Energy Progress",t:"Rate adjustment",s:"Public witness hearings March 2026",w:"2026"}],ctx:"Duke is already a workshop participant."},
+  "ohio":{label:"Ohio",heat:"warm",utility:"AEP Ohio",window:"2026–2027",urgency:"AEP Ohio and FirstEnergy have active PUCO proceedings. Ohio intervenors have been increasingly sophisticated in cross-referencing IRP assumptions against rate case filings.",hook:"Ohio intervenors are increasingly cross-referencing IRP assumptions against rate case filings — the consistency gap is becoming a standard challenge tactic.",cases:[{u:"AEP Ohio",t:"Distribution investment plan",s:"PUCO proceeding active",w:"2026–2027"},{u:"FirstEnergy",t:"Electric distribution rate case",s:"PUCO review",w:"2026"}],ctx:"Active PUCO proceedings with growing intervenor sophistication."},
+  "colorado":{label:"Colorado",heat:"warm",utility:"Atmos Energy",window:"2026",urgency:"Atmos Energy has an active gas rate increase before the Colorado PUC with a public hearing in April 2026. The window to close the consistency gap between the IRP and the rate case before discovery opens is narrow.",hook:"Atmos Energy's rate case hearing is in April — the consistency between IRP assumptions and the rate case filing will be tested in discovery shortly after.",cases:[{u:"Atmos Energy",t:"Gas rate increase",s:"Active, public hearing April 2026",w:"2026"},{u:"Xcel Energy (PSCo)",t:"IRP and rate proceedings",s:"Colorado PUC active",w:"2026"}],ctx:"Colorado PUC with active proceedings and an imminent hearing."},
+  "pennsylvania":{label:"Pennsylvania",heat:"warm",utility:"PPL / PECO",window:"2026–2027",urgency:"PA American Water's rate case has a PUC decision due August 2026. Multiple intervenors are active across Pennsylvania proceedings, systematically cross-referencing prior IRP filings.",hook:"Pennsylvania intervenors are active across multiple proceedings — assumption consistency across prior IRP filings is a standard challenge vector.",cases:[{u:"PA American Water",t:"Rate increase",s:"PUC decision due August 2026",w:"Aug 2026"},{u:"PECO / PPL",t:"Distribution rate proceedings",s:"PA PUC active",w:"2026–2027"}],ctx:"Multiple active proceedings with active intervenor participation."},
+  "oregon":{label:"Oregon",heat:"warm",utility:"PacifiCorp",window:"2026",urgency:"PacifiCorp's multi-state exposure means that assumption consistency across Oregon, Utah, Wyoming, and Washington filings is a specific and compounding discovery risk.",hook:"PacifiCorp's multi-state scope means assumption consistency across jurisdictions is a compounding risk — what one state's filing says will be cross-referenced against others.",cases:[{u:"PacifiCorp",t:"Rate filing and CPCN filings",s:"Filed November 2025, active OPUC docket",w:"2026"},{u:"Portland General Electric",t:"Power cost variance docket",s:"Active",w:"Ongoing"}],ctx:"Multi-state exposure creates compounding consistency risk."},
+  "maryland":{label:"Maryland",heat:"warm",utility:"Pepco",window:"2026",urgency:"Pepco filed its rate case in October 2025 and is in active proceedings. The consistency between IRP assumptions and the rate case filing is currently being tested.",hook:"Pepco's rate case is active — the consistency between the IRP and the current rate case filing is being tested right now.",cases:[{u:"Pepco",t:"Rate increase application",s:"Filed October 2025, active",w:"2026"},{u:"BGE",t:"Multi-year plan",s:"MD PSC proceeding",w:"2026"}],ctx:"Active proceedings with IRP-to-rate-case consistency currently under review."},
+  "hawaii":{label:"Hawaii",heat:"medium",utility:"Hawaiian Electric",window:"Active",urgency:"Hawaiian Electric's Waiau Repowering approval came with strict cost controls. Ongoing compliance means the consistency between what was filed and what is being delivered is under continuous scrutiny.",hook:"Hawaiian Electric's approval conditions mean the consistency between filed assumptions and delivery is under continuous regulatory scrutiny.",cases:[{u:"Hawaiian Electric",t:"Waiau Repowering Project",s:"Approved March 2026 with cost controls",w:"Active"},{u:"HECO",t:"Clean energy transition filings",s:"PUC active",w:"2026+"}],ctx:"Active compliance conditions create ongoing consistency scrutiny."}
 };
 
 var personaData={
-  "vp":{label:"VP Regulatory / Executive",pain:"balancing internal capital funding battles with external rate recovery pressure, and needing a portfolio story that holds up for commissioners, CFOs, and boards simultaneously",cold_open:"I want to raise something that I suspect is sitting close to the top of your agenda right now.",warm_open:"Following up on our recent conversation — I wanted to share something specific to what's happening in [STATE] right now.",hot_open:"Given where we are in our conversation, I wanted to put something concrete in front of you."},
-  "reg-lead":{label:"Regulatory Strategy Lead",pain:"receiving discovery requests with a ten-day window and manually pulling data from disconnected systems — knowing that one inconsistent response can open a new line of challenge",cold_open:"I'll get straight to the point — I think we can make your next discovery cycle significantly less painful.",warm_open:"Good to connect again. I wanted to follow up with something specific to [STATE]'s current proceedings.",hot_open:"Building on what we've been discussing — here's the specific value I think is most relevant to your team right now."},
-  "cap-mgr":{label:"Capital Planning Manager",pain:"the capital plan evolving after filing while the regulatory record stays frozen, and the inability to quickly answer 'what were your numbers on filing day' without reconstructing analysis under pressure",cold_open:"There's a specific problem in capital planning that I don't think any tool has properly solved yet — I'd value your perspective on it.",warm_open:"Following up from our last conversation — I wanted to connect this specifically to what's happening with [UTILITY]'s filing.",hot_open:"I wanted to put a specific use case in front of you that I think maps directly to the problem you described."},
-  "engineer":{label:"Engineer / Project Owner",pain:"spending a month or more manually assembling project justifications from data that already exists in Copperleaf, with no reusable output and the same effort repeating every cycle",cold_open:"I want to ask you a direct question: how much of your last filing cycle was spent writing justifications for work you'd already done?",warm_open:"Good to reconnect — I wanted to follow up with something specific to the engineering burden around [STATE]'s upcoming filing.",hot_open:"Based on what you've shared with us, I think this is the capability that will have the most direct impact on your team."},
-  "attorney":{label:"Regulatory Affairs Attorney",pain:"manually validating citations across disconnected systems under tight IR timelines, and the constant exposure risk of generating new analysis rather than citing the existing record",cold_open:"I want to raise something that I think matters a great deal to how your team manages discovery exposure.",warm_open:"Following up on our conversation — I wanted to bring this back to the specific context of [STATE]'s active proceeding.",hot_open:"I think we're at the point where it makes sense to show you exactly how the attorney review workflow functions."}
+  "vp":{label:"VP Regulatory / Executive",
+    cold_open:"A quiet shift has been happening in rate cases — and it is starting to show up in disallowance decisions.",
+    warm_open:"Following up on our last conversation with something specific to what's happening in [STATE] right now.",
+    hot_open:"Given where we are, I want to put the specific value most relevant to [UTILITY] in front of you directly."},
+  "reg-lead":{label:"Regulatory Strategy Lead",
+    cold_open:"There is a specific risk in regulatory proceedings that most teams only discover when an intervenor finds it first.",
+    warm_open:"Good to connect again — I wanted to follow up with something specific to [STATE]'s current proceedings.",
+    hot_open:"Building on what we've discussed — here is the specific capability most relevant to your team right now."},
+  "cap-mgr":{label:"Capital Planning Manager",
+    cold_open:"The gap between what a utility filed and what it currently believes is widening with every planning cycle.",
+    warm_open:"Following from our last conversation — I wanted to connect this specifically to what's happening with [UTILITY]'s filing.",
+    hot_open:"I want to put a specific use case in front of you that maps directly to the problem you described."},
+  "engineer":{label:"Engineer / Project Owner",
+    cold_open:"I want to ask a direct question: how much of your last filing cycle was spent writing justifications for decisions already made?",
+    warm_open:"Good to reconnect — I wanted to follow up on the engineering burden specific to [STATE]'s upcoming filing.",
+    hot_open:"Based on what you've shared, I think this capability has the most direct impact on your team's filing cycle."},
+  "attorney":{label:"Regulatory Affairs Attorney",
+    cold_open:"The consistency gap between an IRP and a rate case used to be a documentation issue. With sharper intervenors, it is now a disallowance risk.",
+    warm_open:"Following our conversation — I wanted to bring this back to the specific consistency risk in [STATE]'s active proceeding.",
+    hot_open:"I think we are at the point where it makes sense to show you exactly how the citation grounding and attorney review workflow functions."}
 };
 
 function updateWarmth(){
   var v=parseInt(document.getElementById('warmthSlider').value);
-  for(var i=0;i<3;i++){
-    var el=document.getElementById('wl'+i);
-    el.classList.toggle('active',i===v);
-  }
+  for(var i=0;i<3;i++){document.getElementById('wl'+i).classList.toggle('active',i===v);}
 }
 
 function copyText(id,btn){
   var el=document.getElementById(id);
-  var text=el.innerText||el.textContent;
-  navigator.clipboard.writeText(text).then(function(){
-    var orig=btn.textContent;
-    btn.textContent='Copied!';
-    btn.style.background='var(--navy)';
+  navigator.clipboard.writeText(el.innerText||el.textContent).then(function(){
+    var orig=btn.textContent;btn.textContent='Copied!';btn.style.background='var(--navy)';
     setTimeout(function(){btn.textContent=orig;btn.style.background='var(--p)';},2000);
   });
 }
@@ -712,27 +865,45 @@ function generateEmail(){
   var out=document.getElementById('emailOutput');
   var ph=document.getElementById('emailPlaceholder');
   if(!state){out.style.display='none';ph.style.display='block';return;}
-  var sd=stateData[state];
-  var pd=personaData[persona];
+  var sd=stateData[state];var pd=personaData[persona];
   var wk=['cold','warm','hot'][warmth];
-  var wl=['Cold outreach','Warm follow-up','Active conversation'][warmth];
-  var utility=sd.utility;
+  var wl=['Cold — Govern-led','Warm follow-up','Active conversation'][warmth];
+  var open=pd[wk+'_open'].replace('[STATE]',sd.label).replace('[UTILITY]',sd.utility);
+
   var subjects={
-    cold:{vp:'The filing window in '+sd.label+' — and what it means for your capital plan','reg-lead':'Discovery in '+sd.label+': a faster path to a cited response','cap-mgr':'What your '+sd.label+' filing will look like under discovery',engineer:'Project justifications for '+sd.label+' — there is a faster way',attorney:'Discovery exposure in '+sd.label+' — worth 15 minutes of your time'},
-    warm:{vp:'Following up — '+sd.label+'\'s regulatory window and your capital plan','reg-lead':'Re: '+sd.label+' discovery prep — a specific idea for your team','cap-mgr':'The filing snapshot problem in '+sd.label+' — following up',engineer:'Following up on '+sd.label+' filing prep — project justifications',attorney:'Re: '+sd.label+' discovery — the citation grounding workflow'},
-    hot:{vp:'Next step: '+sd.label+' capital plan evidence — proposal inside','reg-lead':'Ready to move forward on '+sd.label+' discovery prep','cap-mgr':'Next steps: filing snapshot and change log for '+sd.label,engineer:'Moving forward on '+sd.label+' project justification workflow',attorney:'Ready to walk you through the attorney review queue — '+sd.label}
+    cold:{
+      vp:'The consistency gap in '+sd.label+' — and where disallowance risk now lives',
+      'reg-lead':'Two filings. Two sets of assumptions. '+sd.label+' proceedings.',
+      'cap-mgr':'The frozen record problem in '+sd.label,
+      engineer:'Project justifications in '+sd.label+' — the structured register approach',
+      attorney:'Assumption consistency across '+sd.label+' filings — worth 15 minutes'
+    },
+    warm:{
+      vp:'Following up — the consistency gap in '+sd.label+"'s filings",
+      'reg-lead':'Re: '+sd.label+' proceedings — the assumption register approach',
+      'cap-mgr':'The frozen record in '+sd.label+' — following up',
+      engineer:'Following up on '+sd.label+' filing prep',
+      attorney:'Re: '+sd.label+' — citation grounding and the consistency gap'
+    },
+    hot:{
+      vp:'Next step: closing the consistency gap in '+sd.label,
+      'reg-lead':'Ready to move forward on '+sd.label+' assumption register',
+      'cap-mgr':'Next steps: filing snapshot for '+sd.label,
+      engineer:'Moving forward on '+sd.label+' project justification register',
+      attorney:'Ready to walk through the attorney review queue — '+sd.label
+    }
   };
-  var open=pd[wk+'_open'].replace('[STATE]',sd.label).replace('[UTILITY]',utility);
+
   var bodies={
-    cold:open+'\n\n'+sd.hook+'\n\n'+utility+' has a filing window in '+sd.window+'. '+sd.urgency+'\n\nThe teams responsible for defending these filings are under a pressure most tools are not built for — assembling evidence manually, responding to discovery in ten-day windows, and holding together a regulatory narrative while the capital plan keeps evolving underneath them.\n\nIFS Copperleaf Regulatory Intelligence is built specifically for this. For the investments that run through Copperleaf, it connects live regulatory signals directly to the capital plan, helps build cited project justifications, and supports teams in responding to discovery in hours rather than days — with every output grounded in the filed record and reviewed by an attorney before anything enters the proceeding.\n\nI would welcome fifteen minutes to show you what this looks like in the context of '+sd.label+'\'s current proceedings. Would you have time this week or next?\n\nBest,\n[Your name]',
-    warm:open+'\n\nGiven what\'s happening in '+sd.label+' right now — '+sd.urgency.toLowerCase()+' — I wanted to bring a specific capability to your attention.\n\nIFS Copperleaf Regulatory Intelligence connects live regulatory activity directly to the capital plan. It translates signals like the ones your team is navigating right now into investment-level impact, and helps build the evidence base needed to defend the plan — cited, auditable, and grounded in how decisions were actually made.\n\nThe pain I hear most consistently from '+pd.label.toLowerCase()+'s in your position is '+pd.pain+'. That is precisely what this is designed to address.\n\nWould you be open to a focused thirty-minute call to walk through the use case?\n\nBest,\n[Your name]',
-    hot:open+'\n\nTo be direct about the value most relevant to '+utility+' right now: '+sd.urgency+'\n\nThe capability that addresses this most directly is the combination of the Filing Snapshot Service — an immutable copy of the capital plan at filing with a full change log — and the Intervenor Request Accelerator, which drafts discovery responses cited against the filed record and routes them through attorney review before anything enters the proceeding.\n\nFor a '+pd.label.toLowerCase()+', the immediate return is straightforward: '+pd.pain+'.\n\nI want to keep this moving. Can we find thirty minutes this week to align on next steps?\n\nBest,\n[Your name]'
+    cold:open+'\n\n'+sd.hook+'\n\nWhen a utility files an IRP, then files a rate case, then answers discovery — those three documents are supposed to tell one consistent story. They rarely do. Not because the work is sloppy, but because the plan keeps moving while each filing stays frozen at the moment it was submitted. Intervenors cross-reference them. The gaps are found.\n\nThe utilities holding up under this pressure have made a structural change: one assumption register that maintains a versioned, traced, citable record of every claim that flows into testimony — the same answer across teams, filings, and time.\n\n'+sd.utility+' is operating in exactly the environment where this matters most. '+sd.urgency+'\n\nOpen to a 30-minute working session on your upcoming filings? We would identify two or three investments most exposed to a consistency challenge and walk through what a structured register would produce for those specific filings.\n\nBest,\n[Your name]',
+    warm:open+'\n\nGiven what is happening in '+sd.label+' right now — '+sd.urgency.toLowerCase()+' — I wanted to bring a specific capability to your attention.\n\nThe consistency gap between the IRP, the rate case, and discovery responses is where disallowance risk now lives. The underlying knowledge exists inside the utility. It just is not structured, versioned, or cited in a way that holds up when an intervenor cross-references your filings.\n\nRegulatory Intelligence closes that gap structurally: one assumption register, every assumption versioned and traced, the same answer across every filing, team, and proceeding.\n\nWould you be open to a focused 30-minute session on the specific filings in flight?\n\nBest,\n[Your name]',
+    hot:open+'\n\nTo be direct about the value most relevant to '+sd.utility+' right now: '+sd.urgency+'\n\nThe capability that addresses this most directly is the structured assumption register — a versioned, traced, citable record of every assumption that flows into testimony. Combined with the Filing Snapshot Service and the Intervenor Request Accelerator, it means discovery responses trace to the same register the IRP and rate case were built from. One consistent answer. No reconstruction under pressure.\n\nI want to keep this moving. Can we find 30 minutes this week?\n\nBest,\n[Your name]'
   };
+
   document.getElementById('emailSubject').textContent=subjects[wk][persona];
   document.getElementById('emailBody').textContent=bodies[wk];
-  document.getElementById('emailNote').textContent=wl+' — tailored for '+pd.label+' in '+sd.label+'. Replace [Your name] before sending.';
-  out.style.display='block';
-  ph.style.display='none';
+  document.getElementById('emailNote').textContent=wl+' — '+pd.label+' in '+sd.label+'. Replace [Your name] before sending.';
+  out.style.display='block';ph.style.display='none';
 }
 
 function lookupState(){
@@ -751,24 +922,26 @@ function liveFilter(){var q=document.getElementById('stateInput').value.trim().t
 document.getElementById('stateInput').addEventListener('keydown',function(e){if(e.key==='Enter')lookupState();});
 
 var pStates=[
-  {key:"indiana",l:"Indiana",h:"hot",s:"NiSource + Duke + AES · Multiple TDSIC proceedings · OUCC scrutiny",tags:["Named accounts","TDSIC","2026"]},
-  {key:"new york",l:"New York",h:"hot",s:"National Grid CLCPA · Multi-year rate cadence · Labs pre-engaged",tags:["Named account","CLCPA","2026–2027"]},
-  {key:"california",l:"California",h:"hot",s:"SCE $28B wildfire restructuring · PG&E GRC · CPUC active",tags:["$28B capital","Wildfire","2026–2027"]},
-  {key:"minnesota",l:"Minnesota",h:"hot",s:"Xcel $491M case · Escalating intervenor opposition",tags:["$491M filing","Active","2026"]},
+  {key:"indiana",l:"Indiana",h:"hot",s:"NiSource + Duke + AES · OUCC targeting assumption consistency",tags:["Named accounts","TDSIC","2026"]},
+  {key:"new york",l:"New York",h:"hot",s:"National Grid CLCPA · 150+ parties · Labs pre-engaged",tags:["Named account","CLCPA","2026–2027"]},
+  {key:"california",l:"California",h:"hot",s:"SCE $28B wildfire restructuring · 150+ parties at CPUC",tags:["$28B capital","Multi-party","2026–2027"]},
+  {key:"minnesota",l:"Minnesota",h:"hot",s:"Xcel $491M · Escalating intervenor opposition",tags:["$491M filing","Active","2026"]},
   {key:"illinois",l:"Illinois",h:"hot",s:"Ameren 4 simultaneous ICC appeals · $31.8B committed capital",tags:["Multi-docket","$31.8B","Ongoing"]},
-  {key:"michigan",l:"Michigan",h:"warm",s:"DTE $574M + Consumers Energy · Both HData customers",tags:["HData co-sell","$574M","2026"]},
-  {key:"north carolina",l:"North Carolina",h:"warm",s:"Duke Energy Carolinas + Progress · Workshop participant",tags:["Workshop participant","Active","2026"]},
-  {key:"ohio",l:"Ohio",h:"warm",s:"AEP Ohio + FirstEnergy · Active PUCO capital proceedings",tags:["PUCO","2026–2027"]},
-  {key:"colorado",l:"Colorado",h:"warm",s:"Atmos Energy GRC + Xcel PSCo · April 2026 public hearing",tags:["April 2026","Active"]},
+  {key:"michigan",l:"Michigan",h:"warm",s:"DTE 4th rate case in 5 years · Compounding consistency risk",tags:["HData co-sell","$574M","2026"]},
+  {key:"north carolina",l:"North Carolina",h:"warm",s:"Duke cross-jurisdictional · Indiana + Carolinas consistency risk",tags:["Workshop participant","Cross-jurisdiction","2026"]},
+  {key:"ohio",l:"Ohio",h:"warm",s:"AEP + FirstEnergy · Intervenors cross-referencing IRP assumptions",tags:["PUCO","2026–2027"]},
+  {key:"colorado",l:"Colorado",h:"warm",s:"Atmos Energy · April 2026 hearing · Narrow prep window",tags:["April 2026","Active"]},
   {key:"pennsylvania",l:"Pennsylvania",h:"warm",s:"PA American Water · PUC decision August 2026",tags:["Decision Aug 2026","Active"]},
-  {key:"oregon",l:"Oregon",h:"warm",s:"PacifiCorp + Portland GE · Active OPUC dockets",tags:["Multi-state","Active"]},
-  {key:"maryland",l:"Maryland",h:"warm",s:"Pepco filed Oct 2025 · BGE multi-year plan",tags:["Filed 2025","Active"]}
+  {key:"oregon",l:"Oregon",h:"warm",s:"PacifiCorp multi-state · Cross-jurisdiction consistency risk",tags:["Multi-state","Active"]},
+  {key:"maryland",l:"Maryland",h:"warm",s:"Pepco filed Oct 2025 · IRP-to-rate-case consistency under review",tags:["Filed 2025","Active"]}
 ];
 var pg=document.getElementById('pgrid');
 pStates.forEach(function(s){
   var tags=s.tags.map(function(t){return'<span class="pc2-tag">'+t+'</span>';}).join('');
   pg.innerHTML+='<div class="pc2 '+s.h+'"><div class="pc2-state">'+s.l+'</div><div class="pc2-heat '+s.h+'">'+(s.h==='hot'?'High Priority':'Strong Pipeline')+'</div><div class="pc2-detail">'+s.s+'</div><div class="pc2-tags">'+tags+'</div></div>';
 });
+
+updateWarmth();
 </script>
 </body>
 </html>
