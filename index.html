@@ -695,22 +695,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-seri
   <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
       <div><div class="email-ctrl-label">State / Account</div>
-        <select id="emailState" onchange="generateEmail()" class="email-select">
-          <option value="">Select a state...</option>
-          <option value="indiana">Indiana</option>
-          <option value="new york">New York</option>
-          <option value="california">California</option>
-          <option value="minnesota">Minnesota</option>
-          <option value="illinois">Illinois</option>
-          <option value="michigan">Michigan</option>
-          <option value="north carolina">North Carolina</option>
-          <option value="ohio">Ohio</option>
-          <option value="colorado">Colorado</option>
-          <option value="pennsylvania">Pennsylvania</option>
-          <option value="oregon">Oregon</option>
-          <option value="maryland">Maryland</option>
-          <option value="hawaii">Hawaii</option>
-        </select>
+        <input id="emailState" class="email-select" placeholder="Type any US state..." oninput="generateEmail()" style="height:42px;border:1.5px solid var(--border);border-radius:8px;padding:0 14px;font-size:14px;font-family:inherit;outline:none;background:var(--bg);width:100%">
       </div>
       <div><div class="email-ctrl-label">Persona</div>
         <select id="emailPersona" onchange="generateEmail()" class="email-select">
